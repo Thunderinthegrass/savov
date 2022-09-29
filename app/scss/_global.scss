@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: RFDewi, Arial, sans-serif;
+  font-weight: 400;
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.cases__tab.tab--active{
+  display: block;
+}
+.tab-filter.tab--active{
+  color: var(--filter-active)!important;
+  border-color: var(--filter-active)!important;
+}
+.cases-button.tabs-navigation__item--active{
+  color: #C2C6CB;
+  text-decoration: none;
+}
+.d-none{
+  display: none;
+}
+.tab-body.d-flex{
+  display: flex!important;
+}
+.name-tab.tab--active{
+  opacity: 1!important;
+}
+.body-info.d-flex{
+  display: flex!important;
+}

@@ -1,0 +1,105 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+@import "pages/cases";
+
+:root,
+[data-theme="default"] {
+  --opacity-logo: 1;
+  --bg: #f5f5f5;
+  --bg-panel: #212527;
+  --color-headings: #3d3d3d;
+  --color-text: #ffffff;
+  --mask-color: transparent;
+  --mask-transform: translateX(-100%);
+  --mask-transform-mobile: translateX(0%) translateY(-100%);
+  --button-color-dark: #000000;
+  --button-color-light: #000000;
+  --opacity-switch-dark: 0;
+  --opacity-switch-light: 1;
+  --bg-panel4d4e4f: #4d4e4f;
+  --tab-color: #4d4e4f;
+  --filter-active: #ff562f;
+}
+
+@supports (--css: variables) {
+  [data-theme="dark"] {
+    --opacity-logo: 0;
+    --bg: #131313;
+    --bg-panel: #ffffff;
+    --color-headings: #ff562f;
+    --color-text: #000000;
+    --mask-color: #303438;
+    --mask-transform: translateX(-18%);
+    --mask-transform-mobile: translateX(-4%) translateY(0%);
+    --button-color-dark: #ffffff;
+    --button-color-light: #ffffff;
+    --opacity-switch-dark: 1;
+    --opacity-switch-light: 0;
+    --bg-panel4d4e4f: #ffffff;
+    --tab-color: #c2c6cb;
+    --filter-active: #c2c6cb;
+  }
+}
+
+.active {
+  color: var(--color-text);
+}
+.header {
+  background: var(--bg-panel);
+}
+.buttons-wrapper {
+  display: flex;
+  position: relative;
+  width: 91.5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#theme-switch-dark,
+#theme-switch-light {
+  position: absolute;
+  width: 91.5px;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 12px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  svg {
+    height: 18px;
+    width: 18px;
+    margin-right: 8px;
+    stroke: var(--bg-panel);
+    z-index: 1;
+  }
+  span {
+    z-index: 1;
+  }
+}
+#theme-switch-dark {
+  opacity: var(--opacity-switch-dark);
+  background-color: var(--mask-color);
+  span {
+    color: var(--button-color-dark);
+  }
+}
+#theme-switch-light {
+  opacity: var(--opacity-switch-light);
+  span {
+    color: var(--button-color-light);
+  }
+}
+@media (max-width: 640px) {
+  #theme-switch-dark,
+  #theme-switch-light {
+    width: 91.5px;
+  }
+  .buttons-wrapper{
+    width: 92px;
+    flex-wrap: wrap;
+  }
+}
