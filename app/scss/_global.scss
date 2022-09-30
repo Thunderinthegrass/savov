@@ -3,8 +3,8 @@
 }
 html,
 body {
-  font-family: RFDewi, Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'RF Dewi Expanded', Arial, sans-serif;
+  font-weight: bold;
 }
 .container{
   width: 100%;
@@ -34,4 +34,14 @@ body {
 }
 .body-info.d-flex{
   display: flex!important;
+}
+:root,
+[data-theme="default"] {
+  
+}
+
+@supports (--css: variables) {
+  [data-theme="dark"] {
+    --color--contrast-low: #d6d6d6;
+  }
 }

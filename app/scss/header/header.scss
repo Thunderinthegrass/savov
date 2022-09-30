@@ -1,0 +1,26 @@
+.header {
+  padding-top: 60px;
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  &__top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav {
+    &__link {
+      text-align: right;
+      font-family: RFDewi, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      // color: var(--color--contrast-low);
+      color: #fff;
+    }
+  }
+  .switch-theme-btn {
+    position: absolute;
+  }
+}

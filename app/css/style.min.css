@@ -1,7 +1,21 @@
 @font-face {
   font-family: "RFDewi";
-  src: url(../fonts/RFDewi-Regular.woff2), url(../fonts/RFDewi-Regular.woff);
+  src: url(../fonts/RFDewiExpanded-Regular.woff2), url(../fonts/RFDewiExpanded-Regular.woff);
   font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewi";
+  src: url(../fonts/RFDewiExtended-Bold.woff2), url(../fonts/RFDewiExtended-Bold.woff);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RFDewi";
+  src: url(../fonts/RFDewiExpanded-Black.woff2), url(../fonts/RFDewiExpanded-Black.woff);
+  font-weight: 800;
   font-display: swap;
   font-style: normal;
 }
@@ -71,8 +85,8 @@ a {
 
 html,
 body {
-  font-family: RFDewi, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "RF Dewi Expanded", Arial, sans-serif;
+  font-weight: bold;
 }
 
 .container {
@@ -116,10 +130,16 @@ body {
   display: flex !important;
 }
 
+@supports (--css: variables) {
+  [data-theme=dark] {
+    --color--contrast-low: #d6d6d6;
+  }
+}
 .cases {
   color: var(--bg-panel4d4e4f);
   background-color: var(--bg);
   padding-top: 50px;
+  display: none;
 }
 .cases__buttons {
   padding-top: 36px;
@@ -832,6 +852,33 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+.header {
+  padding-top: 60px;
+}
+.header .container {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.header__top {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .nav__link {
+  text-align: right;
+  font-family: RFDewi, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+.header .switch-theme-btn {
+  position: absolute;
 }
 @supports (-webkit-appearance:none){
 
