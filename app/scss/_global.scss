@@ -3,14 +3,18 @@
 }
 html,
 body {
-  font-family: 'RF Dewi Expanded', Arial, sans-serif;
+  // font-family: 'RF Dewi Expanded', Arial, sans-serif;
+  font-family: RFDewi, Arial, sans-serif;
   font-weight: bold;
+  background-color: var(--bg);
+  transition: .3s;
 }
 .container{
   width: 100%;
   margin: 0 auto;
   padding-left: 70px;
   padding-right: 70px;
+  position: relative;
 }
 .cases__tab.tab--active{
   display: block;
@@ -34,14 +38,4 @@ body {
 }
 .body-info.d-flex{
   display: flex!important;
-}
-:root,
-[data-theme="default"] {
-  
-}
-
-@supports (--css: variables) {
-  [data-theme="dark"] {
-    --color--contrast-low: #d6d6d6;
-  }
 }

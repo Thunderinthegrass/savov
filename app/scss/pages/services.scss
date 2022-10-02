@@ -1,0 +1,14 @@
+.services {
+  padding-top: 33px;
+  &__title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    max-width: 665px;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-55%);
+  }
+}
