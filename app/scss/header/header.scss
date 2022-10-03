@@ -101,6 +101,12 @@
 @media(max-width: 1350px) {
   .switch.media{
     top: 30px;
+    right: 93px;
+  }
+}
+@media(max-width: 375px){
+  .switch.media{
+    right: 75px;
   }
 }
 .header.media{
@@ -114,14 +120,22 @@
       margin-bottom: 200px;
     }
     .nav-mobile-btn{
-      
+      display: flex;
     }
     .header__nav{
       display: none;
       position: absolute;right: 0;
       top: 35px;
     }
-
+  }
+  @media(max-width: 1175px){
+    .header__top{
+      margin-bottom: 180px;
+    }
+    .header__title{
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
 }
 
