@@ -42,6 +42,14 @@
   });
 })();
 
+function mobileMenu() {
+  let btn = document.querySelector('.nav-mobile-btn');
+
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('active');
+  })
+}
+mobileMenu();
 
 // function casesTab() {
 //   const casesButton = document.querySelectorAll(".cases-button");
