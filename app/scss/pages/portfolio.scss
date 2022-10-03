@@ -1,0 +1,135 @@
+.portfolio {
+  padding-top: 220px;
+  &__tab-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-contrast-reverse);
+  }
+  &__tab-btn {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4d4e4f;
+    margin-bottom: 36px;
+  }
+  &__filters-row {
+    padding-top: 36px;
+    padding-bottom: 78px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    gap: 26px;
+  }
+  &__filters-btn {
+    padding: 14px 46px;
+    color: #4d4e4f;
+    border: 1px solid #4d4e4f;
+    border-radius: 123px;
+    cursor: pointer;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  &__item-row{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 570px;
+    height: 510px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    &-img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    &-title {
+      font-weight: 800;
+      font-size: 16.013px;
+      line-height: 19px;
+      max-width: 415px;
+      width: 100%;
+      position: absolute;
+      left: 125px;
+      top: 37px;
+    }
+    &-info {
+      height: 77px;
+      position: relative;
+      display: flex;
+      border-radius: 100%;
+      justify-content: space-between;
+      gap: 20px;
+      &:hover{
+        .info-list__wrapper{
+          display: block;
+        }
+      }
+      &-wrapper {
+        position: absolute;
+        top: 22px;
+        left: 27px;
+      }
+      &-img {
+        border-radius: 100%;
+        overflow: hidden;
+        cursor: pointer;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .info-list__wrapper{
+      display: none;
+      padding-top: 10px;
+    }
+    .info-list {
+      transition: .3s;
+      padding: 12px 16px 16px 16px;
+      width: 240px;
+      height: 168px;
+      border-radius: 6px;
+      background: linear-gradient(0deg, #f9f9f9, #f9f9f9), #ffffff;
+      .list-item {
+        display: flex;
+        margin-bottom: 10px;
+        position: relative;
+        &__text-img{
+          position: absolute;
+          left: -30px;
+          bottom: 0;
+        }
+        &__img {
+          width: 27px;
+          height: 27px;
+          border-radius: 100%;
+          overflow: hidden;
+          margin-right: 8px;
+          img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+          }
+        }
+        &__name {
+          font-weight: 800;
+          font-size: 11.2372px;
+          line-height: 13px;
+          color: #282828;
+        }
+        &__work {
+          font-weight: 300;
+          font-size: 9.83257px;
+          line-height: 12px;
+        }
+      }
+    }
+  }
+}

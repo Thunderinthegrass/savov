@@ -1,0 +1,87 @@
+.industry {
+  padding-top: 250px;
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  &__inner {
+    border-top: 1px solid var(--color-contrast-reverse);
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    padding-top: 37px;
+    max-width: 343px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    color: var(--color-contrast-reverse);
+  }
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1165px;
+    width: 100%;
+  }
+  &__list {
+    width: 100%;
+    .industry__list-item {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 37px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--color-contrast-reverse);
+      &:hover{
+        .list-item__text{
+          transform: translateX(85px);
+        }
+        .list-item__number::before{
+          opacity: 1;
+        }
+        .list-item__count{
+          color: var(--color--contrast-low-2);
+        }
+      }
+    }
+    .text-left {
+      display: flex;
+    }
+    .list-item__number {
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 38px;
+      margin-right: 31px;
+      width: 49px;
+      text-align: center;
+      color: var(--color-contrast-high);
+      position: relative;
+      &::before{
+        position: absolute;
+        content: "";
+        width: 63px;
+        height: 22px;
+        right: calc(-100% + -34px);
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../img/portfolio/arrow-list.svg);
+        transition: .3s;
+        opacity: 0;
+      }
+    }
+    .list-item__count {
+      font-weight: 300;
+      font-size: 32px;
+      line-height: 38px;
+      color: var(--color-contrast-high);
+      transition: .3s;
+    }
+    .list-item__text {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      color: var(--color--contrast-low-2);
+      position: relative;
+      transition: .3s;
+    }
+  }
+}

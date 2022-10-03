@@ -71,7 +71,6 @@
   }
   &__item {
     width: 512px;
-    height: 720px;
     padding-top: 70px;
     position: relative;
     &-title {
@@ -127,5 +126,8 @@
   &__name{
     padding: 27px 0;
     color: var(--color--contrast);
+    &:nth-child(2){
+      border-top: 1px solid var(--color--contrast-bgg);
+    }
   }
 }
