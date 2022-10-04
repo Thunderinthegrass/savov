@@ -51,6 +51,49 @@ function mobileMenu() {
 }
 mobileMenu();
 
+function servicesTabs() {
+  let servicesMobile = document.querySelector('.services__inner-mobile');
+  let tabNav = servicesMobile.querySelectorAll('.services__tab');
+  let servicesItem = servicesMobile.querySelectorAll('.services__item');
+
+    function tabs(Tab, Button) {
+    Button.forEach((elem, index) => {
+      elem.addEventListener("click", (e) => {
+        for (let i = 0; i < Button.length; i++) {
+          Button[i].classList.remove("services__tab--active");
+          e.target.classList.add("services__tab--active");
+          Tab[i].classList.remove("tab--active");
+        }
+        Tab[index].classList.add("tab--active");
+      });
+    });
+  }
+
+  tabs(servicesItem, tabNav);
+}
+servicesTabs();
+
+function portfolioTabs() {
+  let tabNav = document.querySelectorAll('.portfolio__filters-btn');
+  let servicesItem = document.querySelectorAll('.portfolio__inner');
+
+    function tabs(Tab, Button) {
+    Button.forEach((elem, index) => {
+      elem.addEventListener("click", (e) => {
+        for (let i = 0; i < Button.length; i++) {
+          Button[i].classList.remove("portfolio__nav--active");
+          e.target.classList.add("portfolio__nav--active");
+          Tab[i].classList.remove("portfolio--active");
+        }
+        Tab[index].classList.add("portfolio--active");
+      });
+    });
+  }
+
+  tabs(servicesItem, tabNav);
+}
+portfolioTabs();
+
 // function casesTab() {
 //   const casesButton = document.querySelectorAll(".cases-button");
 //   const casesTab = document.querySelectorAll(".cases__tab");
