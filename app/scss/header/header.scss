@@ -137,5 +137,11 @@
       line-height: 38px;
     }
   }
+  @media(max-width: 630px){
+    .container{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 }
 
