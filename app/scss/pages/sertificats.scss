@@ -1,0 +1,40 @@
+.sertificats{
+  .container{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  &__title{
+    color: var(--bg-panel4d4e4f);
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #4d4e4f;
+  }
+  &__descr{
+    padding-top: 37px;
+    max-width: 343px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    color: var(--color-contrast-high);
+  }
+  &__img-wrapper{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__img{
+    max-width: 841px;
+    height: 463px;
+    overflow: hidden;
+    flex: 1;
+    cursor: pointer;
+  }
+}

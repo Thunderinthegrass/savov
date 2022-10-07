@@ -1,0 +1,77 @@
+.modal-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+  z-index: 2;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.modals{
+  z-index: 2;
+}
+.modal {
+	width: 560px;
+	height: 1051px;
+  margin-top: 180px;
+  margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+  &__bottom{
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+  }
+  &__title{
+    font-size: 32px;
+    line-height: 1.17;
+    font-weight: 800;
+    margin-bottom: 17px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  &__icons{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  }
+  &__icon{
+    width: 34px;
+    height: 34px;
+    border-radius: 2px;
+    &:nth-child(1){
+      background: #3B5897;
+      background-image: url(../img/sertificats/fb.svg);
+    }
+    &:nth-child(2){
+      background: #00ACED;
+      background-image: url(../img/sertificats/twitter.svg);
+    }
+  }
+}
+
+.modal-overlay--visible {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal--visible {
+	display: block;
+}
