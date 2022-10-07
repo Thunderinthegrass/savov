@@ -51,27 +51,27 @@ function mobileMenu() {
 }
 mobileMenu();
 
-function servicesTabs() {
-  let servicesMobile = document.querySelector('.services__inner-mobile');
-  let tabNav = servicesMobile.querySelectorAll('.services__tab');
-  let servicesItem = servicesMobile.querySelectorAll('.services__item');
+// function servicesTabs() {
+//   let servicesMobile = document.querySelector('.services__inner-mobile');
+//   let tabNav = servicesMobile.querySelectorAll('.services__tab');
+//   let servicesItem = servicesMobile.querySelectorAll('.services__item');
 
-    function tabs(Tab, Button) {
-    Button.forEach((elem, index) => {
-      elem.addEventListener("click", (e) => {
-        for (let i = 0; i < Button.length; i++) {
-          Button[i].classList.remove("services__tab--active");
-          e.target.classList.add("services__tab--active");
-          Tab[i].classList.remove("tab--active");
-        }
-        Tab[index].classList.add("tab--active");
-      });
-    });
-  }
+//     function tabs(Tab, Button) {
+//     Button.forEach((elem, index) => {
+//       elem.addEventListener("click", (e) => {
+//         for (let i = 0; i < Button.length; i++) {
+//           Button[i].classList.remove("services__tab--active");
+//           e.target.classList.add("services__tab--active");
+//           Tab[i].classList.remove("tab--active");
+//         }
+//         Tab[index].classList.add("tab--active");
+//       });
+//     });
+//   }
 
-  tabs(servicesItem, tabNav);
-}
-servicesTabs();
+//   tabs(servicesItem, tabNav);
+// }
+// servicesTabs();
 
 function portfolioTab() {
   let tabNav = document.querySelectorAll('.portfolio__tab-btn');
