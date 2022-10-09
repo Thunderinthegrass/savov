@@ -313,3 +313,14 @@ function modalVideo() {
 }
 
 modalVideo();
+
+function moreReviews() {
+  let btn = document.querySelector('.reviews__more-btn');
+  let revievs = document.querySelector('.reviews_hide');
+
+  btn.addEventListener('click', () => {
+    revievs.classList.toggle('hide');
+  })
+}
+
+moreReviews();
