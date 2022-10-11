@@ -17,6 +17,7 @@
     padding: 60px 80px 45px;
     margin: 0 auto;
     position: relative;
+    height: 100vh;
   }
   &__top {
     position: relative;
@@ -319,7 +320,13 @@
   }
   @media (max-width: 768px){
     height: auto;
-    padding-bottom: 45px;
+    .container{
+      height: auto;
+    }
+    .header__logo{
+      width: 120px;
+      height: 19px;
+    }
     .header__top{
       margin-bottom: 90px;
     }
@@ -330,8 +337,12 @@
       position: static;
       margin-bottom: 155px;
     }
+    .header__service{
+      margin-right: 0;
+    }
     .header__to-bottom{
       border: none;
+      padding-top: 0;
     }
     .header__links{
       display: flex;

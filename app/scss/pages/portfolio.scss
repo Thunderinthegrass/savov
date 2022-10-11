@@ -1,7 +1,7 @@
 .portfolio {
   padding-top: 94px;
   &-tab_{
-    display: none;
+    // display: none;
     &.portfolio--active{
       display: block;
     }
@@ -24,7 +24,6 @@
     }
   }
   &__filters-row {
-    padding-top: 36px;
     padding-bottom: 78px;
     font-weight: 400;
     font-size: 16px;

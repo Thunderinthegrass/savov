@@ -25,7 +25,6 @@
   }
   &__tab-filters {
     margin-top: 36px;
-    margin-bottom: 56px;
     display: flex;
   }
   .tab-filter {
@@ -55,7 +54,7 @@
     }
   }
   .tab-body {
-    // display: flex;
+    padding-top: 36px;
     display: none;
     &__names {
       display: flex;
