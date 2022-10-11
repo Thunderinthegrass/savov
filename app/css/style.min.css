@@ -2154,10 +2154,16 @@ body {
 .header .header__logo_light {
   opacity: var(--opacity-logo-light);
 }
-.header .nav-mobile-btn {
+.header .mobile-btn-wrapper {
+  padding: 12px 20px;
+  background: #000;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: -30px;
+  top: -30px;
+  border-radius: 0px 0px 0px 5px;
+  display: none;
+}
+.header .nav-mobile-btn {
   width: 37px;
   height: 37px;
   display: -webkit-box;
@@ -2205,13 +2211,15 @@ body {
 }
 .header .nav {
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 375px;
+  background: #0E0E0E;
+}
+.header .nav.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .nav__list {
+  text-align: right;
 }
 .header .nav__item {
   margin-bottom: 7px;
@@ -2223,6 +2231,12 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: var(--color--contrast-low);
+}
+.header__links {
+  position: absolute;
+  right: 93px;
+  top: 65px;
+  z-index: 2;
 }
 .header__links .link-phone {
   font-family: RFDewi, Arial, sans-serif;
@@ -2367,7 +2381,7 @@ body {
 }
 @media (max-width: 1350px) {
   .switch.media {
-    top: 30px;
+    top: 15px;
     right: 93px;
   }
 }
@@ -2385,16 +2399,34 @@ body {
   .header.media .header__top {
     margin-bottom: 200px;
   }
+  .header.media .header__links {
+    top: auto;
+    bottom: 40px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .header.media .mobile-btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .header.media .nav-mobile-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .header.media .header__nav {
-    display: none;
     position: absolute;
     right: 0;
     top: 35px;
+  }
+}
+@media (max-width: 1270px) {
+  .header.media .to-bottom_left,
+.header.media .to-bottom_right {
+    display: none;
   }
 }
 @media (max-width: 1175px) {
@@ -2404,6 +2436,70 @@ body {
   .header.media .header__title {
     font-size: 32px;
     line-height: 38px;
+  }
+}
+@media (max-width: 980px) {
+  .header.media .header__services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header.media .header__service:first-child {
+    max-width: 526px;
+    width: 100%;
+    margin-bottom: 17px;
+  }
+  .header.media .header__service:nth-child(2) {
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 17px;
+  }
+  .header.media .header__service:last-child {
+    margin-right: 0;
+    max-width: 106px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .header.media {
+    height: auto;
+    padding-bottom: 45px;
+  }
+  .header.media .header__top {
+    margin-bottom: 90px;
+  }
+  .header.media .header__title {
+    margin-bottom: 90px;
+  }
+  .header.media .header__services {
+    position: static;
+    margin-bottom: 155px;
+  }
+  .header.media .header__to-bottom {
+    border: none;
+  }
+  .header.media .header__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: static;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .header.media .header__links .link-phone {
+    margin-right: 0;
+  }
+  .header.media .header__links .request-btn {
+    margin-bottom: 11px;
   }
 }
 @media (max-width: 630px) {
@@ -2745,8 +2841,8 @@ body {
 
 .switch {
   position: absolute;
-  top: 55px;
-  right: 480px;
+  top: 57px;
+  right: 490px;
 }
 
 .buttons-wrapper {
@@ -3135,7 +3231,23 @@ body {
 
 }
 
+ @media (max-width: 1270px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
  @media (max-width: 1175px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 980px){
 
 @supports (-webkit-appearance:none){
 

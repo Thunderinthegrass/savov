@@ -44,9 +44,11 @@
 
 function mobileMenu() {
   let btn = document.querySelector(".nav-mobile-btn");
+  let nav = document.querySelector('.nav');
 
   btn.addEventListener("click", () => {
     btn.classList.toggle("active");
+    nav.classList.toggle("active");
   });
 }
 mobileMenu();
