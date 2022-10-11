@@ -320,6 +320,13 @@ function moreReviews() {
 
   btn.addEventListener('click', () => {
     revievs.classList.toggle('hide');
+
+    // if ('hide') {
+    //   btn.innerHTML = 'Показать ещё';
+    // }
+    // else {
+    //   btn.innerHTML = 'Скрыть';
+    // }
   })
 }
 
