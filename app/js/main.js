@@ -288,6 +288,7 @@ function modalVideo() {
   const btns = document.querySelectorAll(".btn-video");
   const modalOverlay = document.querySelectorAll(".modal-overlay-video");
   const modals = document.querySelectorAll(".modal__video");
+  let videoModal = document.querySelector('.video-modal');
 
   btns.forEach((el, id) => {
     el.addEventListener("click", (e) => {
@@ -303,7 +304,7 @@ function modalVideo() {
 
     modalOverlay[id].addEventListener("click", (e) => {
       console.log(e.target);
-  
+
       if (e.target == modalOverlay[id]) {
         modalOverlay[id].classList.remove("modal-overlay--visible");
         modals.forEach((el) => {
