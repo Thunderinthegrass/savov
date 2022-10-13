@@ -324,13 +324,46 @@ function moreReviews() {
   btn.addEventListener('click', () => {
     revievs.classList.toggle('hide');
 
-    // if ('hide') {
-    //   btn.innerHTML = 'Показать ещё';
-    // }
-    // else {
-    //   btn.innerHTML = 'Скрыть';
-    // }
+    if (revievs.classList.contains('hide')) {
+      btn.innerHTML = 'Показать ещё';
+    }
+    else {
+      btn.innerHTML = 'Скрыть';
+    }
   })
+
+  // let reviewsItemImg = document.querySelectorAll('.reviews__item-img');
+
+  // reviewsItemImg.forEach((elem) => {
+  //   console.log(elem.innerHTML)
+
+  //   if (elem.innerHTML == ''){
+  //     elem.style.height = '0px';
+  //     elem.style.margin = '0';
+  //     elem.nextElementSibling.style.height = '0px';
+  //     elem.parentElement.style.height = '0px';
+  //   }
+  // })
 }
 
 moreReviews();
+
+function moreReviewsMobile() {
+  let btn = document.querySelector('.reviews__more-btn_mobile');
+  let reviewsInners = document.querySelector('.reviews__inners');
+  let revievs = document.querySelector('.reviews_hide');
+
+  btn.addEventListener('click', () => {
+    reviewsInners.classList.toggle('open');
+    revievs.classList.toggle('hide');
+
+    if (revievs.classList.contains('hide')) {
+      btn.innerHTML = 'Показать ещё';
+    }
+    else {
+      btn.innerHTML = 'Скрыть';
+    }
+  })
+}
+
+moreReviewsMobile();
