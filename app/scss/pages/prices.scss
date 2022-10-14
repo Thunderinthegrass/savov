@@ -1,74 +1,63 @@
-.prices{
-  .container{
+.prices {
+  .container {
     padding-left: 80px;
     padding-right: 80px;
   }
-  &__title{
+  &__title {
     color: var(--bg-panel4d4e4f);
     font-size: 27px;
     font-weight: 400;
     line-height: 42px;
     margin-bottom: 20px;
   }
-  &__inner{
-    display: flex;
-    justify-content: center;
-    border-top: 1px solid #4d4e4f;
-    gap: 30px;
-    padding-top: 55px;
-    padding-bottom: 90px;
-  }
-  &__row{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-  &__item{
-    position: relative; 
-    width: 260px;
-    height: 453px;
-    border: 1px solid var(--bg-panel4d4e4f);
-    color: var(--bg-panel4d4e4f);
-    border-radius: 12px;
-    padding-top: 40px;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    &-title{
-      font-size: 21px;
-      font-weight: 800;
-      margin-bottom: 36px;
-    }
-  }
-  &__list-item{
-    font-weight: 400;
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-  &__price{
-    font-size: 25px;
-    font-weight: 800;
-    position: absolute;
-    bottom: 120px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-  }
-  &__btn{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 50px;
-    width: 160px;
-    height: 40px;
+  &__list {
     border: 1px solid #4d4e4f;
-    color: #4d4e4f;
-    cursor: pointer;
-    transition: .3s;
-    border-radius: 123px;
-    &:hover{
-      color: var(--filter-active);
-    border-color: var(--filter-active);
+    padding-left: 24px;
+    overflow: hidden;
+  }
+  &__item {
+    color: var(--list);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    &-name{
+      width: 264px;
+      position: relative;
+      padding-bottom: 48px;
+      display: block;
+      flex-shrink: 0;
+      &:first-child{
+        padding-top: 48px;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: #4d4e4f;
+      }
+    }
+    .lite,
+    .standart,
+    .premium,
+    .express{
+      width: 362px;
+      position: relative;
+      height: 100%;
+      padding-left: 37px;
+      &::after{
+        position: absolute;
+        content: "";
+        right: 0;
+        top: -100px;
+        width: 1px;
+        height: 1000%;
+        background-color: #4d4e4f;
+      }
     }
   }
 }

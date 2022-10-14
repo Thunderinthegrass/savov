@@ -367,3 +367,9 @@ function moreReviewsMobile() {
 }
 
 moreReviewsMobile();
+
+$(document).ready(function(){
+  $('.clients-slider').slick({
+    arrows: false,
+  });
+});

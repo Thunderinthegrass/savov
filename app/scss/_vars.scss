@@ -32,6 +32,7 @@
   --opacity-switch-light: 1;
   --bg-panel4d4e4f: #4d4e4f;
   --menu-btn: #282828;
+  --list: #282828;
 }
 
 @supports (--css: variables) {
@@ -68,5 +69,6 @@
     --opacity-switch-light: 0;
     --bg-panel4d4e4f: #ffffff;
     --menu-btn: #ffffff;
+    --list: #a4a6a9;
   }
 }

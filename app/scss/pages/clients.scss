@@ -1,4 +1,4 @@
-.clients{
+.clients {
   margin-bottom: 209px;
   .container {
     padding-left: 80px;
@@ -10,45 +10,179 @@
     font-weight: 400;
     line-height: 42px;
     margin-bottom: 20px;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: "";
+      bottom: -15px;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background: #4d4e4f;
+      display: none;
+    }
   }
   &__inner {
     border-top: 1px solid #4d4e4f;
     display: flex;
     flex-wrap: wrap;
+    &_mobile{
+      display: none;
+    }
   }
-  &__item{
+  &__item {
     width: 20%;
     height: 326px;
     position: relative;
-    transition: .3s;
+    transition: 0.3s;
     border-radius: 4px;
-    &:hover{
+    &:hover {
       background: #f9f9f9;
-      .clients__logo{
+      .clients__logo {
         opacity: 0;
       }
-      .clients__logo_hover{
+      .clients__logo_hover {
         opacity: 1;
       }
     }
-    .sleep-system{
+    .pilki {
+      width: 204px;
+    }
+    .bassein {
+      width: 243px;
+    }
+    .tbs {
+      width: 234px;
+    }
+    .logo-pool {
+      width: 262px;
+    }
+    .metizoff {
+      width: 244px;
+    }
+    .flexalen {
+      width: 284px;
+    }
+    .bazadance {
       width: 256px;
-      height: 64px;
+    }
+    .more {
+      width: 224px;
+    }
+    .odevai {
+      width: 261px;
+    }
+    .mpt {
+      width: 192px;
+    }
+    .ecoroll {
+      width: 191px;
+    }
+    .metrology {
+      width: 284px;
+    }
+    .moi-dom {
+      width: 153px;
+    }
+    .formula {
+      width: 242px;
+    }
+    .sleep-system {
+      width: 256px;
     }
   }
-  &__logo{
+  &__logo {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: .3s;
+    transition: 0.3s;
   }
-  &__logo_hover{
+  &__logo_hover {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: .3s;
+    transition: 0.3s;
     opacity: 0;
+  }
+}
+.clients.media {
+  @media (max-width: 1700px) {
+    .clients__item {
+      width: 25%;
+    }
+  }
+  @media (max-width: 1350px) {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  @media (max-width: 1290px) {
+    .clients__inner {
+      justify-content: center;
+    }
+    .clients__item {
+      width: 290px;
+      height: 290px;
+      flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 120px;
+    .clients__item {
+      width: 200px;
+      height: 200px;
+    }
+    .clients__logo {
+      width: 138px;
+    }
+    .clients__logo_hover {
+      width: 138px;
+    }
+  }
+  @media (max-width: 500px) {
+    .container{
+      padding-right: 0;
+      overflow: hidden;
+    }
+    .clients__title {
+      font-size: 16px;
+      line-height: 19px;
+      margin-right: 20px;
+      padding-right: 20px;
+      &::after{
+        display: block;
+      }
+    }
+    .clients__inner{
+      display: none;
+    }
+    .clients__inner_mobile{
+      display: block;
+    }
+  }
+}
+.clients__inner_mobile.clients-slider{
+  width: 520px;
+  .slick-slide{
+    display: flex;
+    flex-wrap: wrap;
+    width: 520px;
+    .clients__item{
+      width: 260px;
+      height: 260px;
+    }
+  }
+  @media (max-width: 375px){
+  width: 434px;
+    .slick-slide{
+      width: 434px;
+      .clients__item{
+        width: 217px;
+        height: 217px;
+      }
+    }
   }
 }
