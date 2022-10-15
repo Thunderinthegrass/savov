@@ -36,6 +36,7 @@
     position: relative;
     transition: 0.3s;
     border-radius: 4px;
+    cursor: url(../img/cursor.svg), pointer;
     &:hover {
       background: #f9f9f9;
       .clients__logo {

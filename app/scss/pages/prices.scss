@@ -112,6 +112,17 @@
         }
       }
     }
+    &.prices__item_first {
+      .lite,
+      .standart,
+      .premium,
+      .express {
+        &.rate {
+          padding-bottom: 0;
+          height: 165px;
+        }
+      }
+    }
   }
   &__buttons {
     position: relative;
@@ -143,6 +154,94 @@
     margin-top: 30px;
     margin-bottom: 30px;
     cursor: pointer;
+  }
+  &-mobile{
+    .slick-slide{
+      width: 141px!important;
+    }
+  }
+  &__slide-top{
+    padding: 12px 0 12px 15px;
+    background: var(--color--contrast-low-d6d6d6);
+    border-radius: 10px;
+    margin: 0 6px;
+    width: 133px;
+    .prices__name{
+      color: var(--color-contrast-reverse);
+    }
+  }
+}
+.prices.media {
+  @media (max-width: 1350px) {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .prices__item {
+      .lite,
+      .standart,
+      .premium,
+      .express {
+        padding-left: 20px;
+        &.rate {
+          padding-left: 20px;
+        }
+      }
+      &:last-child{
+        .lite,
+      .standart,
+      .premium,
+      .express {
+        padding-left: 0;
+        &.rate {
+          padding-left: 0;
+        }
+      }
+      }
+      .rate__name {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 11px;
+      }
+      .rate__price {
+        font-size: 21.9183px;
+        line-height: 26px;
+      }
+      .rate__info {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+    .prices__btn {
+      font-size: 14px;
+      line-height: 17px;
+      padding: 17px 21px;
+    }
+  }
+  @media (max-width: 1058px){
+    .prices__list{
+      width: 992px;
+    }
+    .prices__inner{
+      overflow-x: scroll;
+    }
+    .prices__item{
+      .lite,
+      .standart,
+      .premium,
+      .express {
+        width: 182px;
+        flex-shrink: 0;
+      }
+    }
+  }
+  @media (max-width: 500px){
+    .prices__inner{
+      display: none;
+    }
+    .prices-mobile{
+      display: block;
+    }
   }
 }
 .modal-overlay-order {
