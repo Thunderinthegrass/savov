@@ -227,7 +227,8 @@ body {
 }
 
 .modal-overlay-sertificat,
-.modal-overlay-video {
+.modal-overlay-video,
+.modal-overlay-order {
   position: fixed;
   left: 0;
   top: 0;
@@ -1802,6 +1803,7 @@ body {
   width: 264px;
   position: relative;
   padding-bottom: 48px;
+  padding-right: 24px;
   display: block;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -1836,7 +1838,7 @@ body {
   right: 0;
   top: -100px;
   width: 1px;
-  height: 1000%;
+  height: 3000%;
   background-color: #4d4e4f;
 }
 .prices__item .express::after {
@@ -1891,6 +1893,91 @@ body {
 .prices__item .rate.express::before {
   width: 110%;
   right: -8px;
+}
+.prices__buttons {
+  position: relative;
+}
+.prices__buttons::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 200%;
+  height: 1px;
+  background-color: #4d4e4f;
+}
+.prices__buttons .lite,
+.prices__buttons .standart,
+.prices__buttons .premium,
+.prices__buttons .express {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.prices__btn {
+  padding: 16px 30px;
+  background: var(--color-contrast-high);
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.modal-overlay-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.order-form {
+  max-width: 488px;
+  height: 493px;
+  padding: 33px 47px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.order-form__title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 45px;
+}
+.order-form__input {
+  width: 100%;
+  height: 42px;
+  border-bottom: 1px solid var(--color-contrast-high);
+  margin-bottom: 45px;
+}
+.order-form__btn {
+  padding: 14px 46px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background: #282828;
+  border-radius: 123px;
+  margin-bottom: 11px;
+  cursor: pointer;
+}
+.order-form .agreement {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 141%;
+  width: 275px;
 }
 
 .clients {
