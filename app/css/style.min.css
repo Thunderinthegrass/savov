@@ -1942,8 +1942,18 @@ body {
   margin-bottom: 30px;
   cursor: pointer;
 }
+.prices-mobile .prices__slide-bottom.slick-slide {
+  display: none;
+}
+.prices-mobile .prices__slide-bottom.slick-slide.slick-active {
+  display: block;
+}
+.prices-mobile .prices__slide-bottom.prices__slide-bottom.slide-bottom.slick-slide.slick-current.slick-active {
+  left: 0 !important;
+}
 .prices-mobile .slide-bottom__name {
   color: var(--bg-panel4d4e4f);
+  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
@@ -1953,7 +1963,28 @@ body {
   background-color: var(--color--contrast-higher);
   border-radius: 10px;
   padding: 16px 18px 21px 15px;
-  color: #A4A6A9;
+  color: #a4a6a9;
+  margin-bottom: 38px;
+}
+.prices-mobile .slide-bottom__item {
+  margin-bottom: 16px;
+}
+.prices-mobile .slide-bottom .development-time {
+  margin-top: 42px;
+}
+.prices-mobile .slide-bottom .installment {
+  margin-top: 42px;
+}
+.prices-mobile .slide-bottom__btn {
+  display: block;
+  background: var(--color-contrast-high);
+  color: #1C1E21;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 16px 38px;
+  border-radius: 10px;
+  margin: 0 auto 150px;
+  cursor: pointer;
 }
 .prices-mobile__slider-top {
   margin-bottom: 36px;
