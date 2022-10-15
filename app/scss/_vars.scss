@@ -36,6 +36,7 @@
   --price: #282828;
   --color--contrast-low-white: #d6d6d6;
   --color--contrast-low-d6d6d6: #ffffff;
+  --color--contrast-higher: #C2C6CB;
 }
 
 @supports (--css: variables) {
@@ -76,5 +77,6 @@
     --price: #ffffff;
     --color--contrast-low-white: #ffffff;
     --color--contrast-low-d6d6d6: #d6d6d6;
+    --color--contrast-higher: #282828;
   }
 }

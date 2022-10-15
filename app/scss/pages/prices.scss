@@ -155,18 +155,42 @@
     margin-bottom: 30px;
     cursor: pointer;
   }
-  &-mobile{
-    .slick-slide{
-      width: 141px!important;
+  &-mobile {
+    .slide-bottom {
+      &__name {
+        color: var(--bg-panel4d4e4f);
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 27px;
+      }
+      &__list{
+        background-color: var(--color--contrast-higher);
+        border-radius: 10px;
+        padding: 16px 18px 21px 15px;
+        color: #A4A6A9;
+      }
     }
   }
-  &__slide-top{
+  &-mobile__slider-top {
+    margin-bottom: 36px;
+    .slick-slide {
+      width: 141px !important;
+    }
+    .slick-active {
+      .prices__slide-top {
+        background: var(--color--contrast-low-d6d6d6);
+      }
+    }
+  }
+  &__slide-top {
     padding: 12px 0 12px 15px;
-    background: var(--color--contrast-low-d6d6d6);
+    background: #282828;
     border-radius: 10px;
     margin: 0 6px;
     width: 133px;
-    .prices__name{
+    transition: 0.3s;
+    .prices__name {
       color: var(--color-contrast-reverse);
     }
   }
@@ -187,16 +211,16 @@
           padding-left: 20px;
         }
       }
-      &:last-child{
+      &:last-child {
         .lite,
-      .standart,
-      .premium,
-      .express {
-        padding-left: 0;
-        &.rate {
+        .standart,
+        .premium,
+        .express {
           padding-left: 0;
+          &.rate {
+            padding-left: 0;
+          }
         }
-      }
       }
       .rate__name {
         font-size: 14px;
@@ -218,14 +242,14 @@
       padding: 17px 21px;
     }
   }
-  @media (max-width: 1058px){
-    .prices__list{
+  @media (max-width: 1058px) {
+    .prices__list {
       width: 992px;
     }
-    .prices__inner{
+    .prices__inner {
       overflow-x: scroll;
     }
-    .prices__item{
+    .prices__item {
       .lite,
       .standart,
       .premium,
@@ -235,11 +259,11 @@
       }
     }
   }
-  @media (max-width: 500px){
-    .prices__inner{
+  @media (max-width: 500px) {
+    .prices__inner {
       display: none;
     }
-    .prices-mobile{
+    .prices-mobile {
       display: block;
     }
   }
