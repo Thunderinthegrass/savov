@@ -1942,6 +1942,9 @@ body {
   margin-bottom: 30px;
   cursor: pointer;
 }
+.prices-mobile {
+  display: none;
+}
 .prices-mobile .prices__slide-bottom.slick-slide {
   display: none;
 }
@@ -1978,7 +1981,7 @@ body {
 .prices-mobile .slide-bottom__btn {
   display: block;
   background: var(--color-contrast-high);
-  color: #1C1E21;
+  color: #1c1e21;
   font-size: 20px;
   line-height: 24px;
   padding: 16px 38px;
@@ -2007,6 +2010,32 @@ body {
 }
 .prices__slide-top .prices__name {
   color: var(--color-contrast-reverse);
+}
+.prices__sales {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 17px;
+}
+.prices__sale {
+  border: 1px solid #4d4e4f;
+  padding: 29px 0 26px 22px;
+}
+.prices__sale-condition {
+  color: #a4a6a9;
+  margin-bottom: 6px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.prices__sale-sale {
+  color: #f9f9f9;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 @media (max-width: 1350px) {
@@ -2074,11 +2103,23 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .prices.media .prices__title {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 27px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--color-contrast-high);
+  }
   .prices.media .prices__inner {
     display: none;
   }
   .prices.media .prices-mobile {
     display: block;
+  }
+  .prices.media .prices__sales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -3274,25 +3315,26 @@ body {
   padding-top: 37px;
   color: #4d4e4f;
 }
-.footer__links {
-  padding-top: 41px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 857px;
-  width: 100%;
-}
 .footer__link {
   color: var(--color--contrast-low);
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
 }
-.footer__link:first-child {
-  margin-right: 86px;
+.footer__link_whatsapp {
+  position: fixed;
+  bottom: 47px;
+  right: 80px;
+}
+.footer__link_mail {
+  position: fixed;
+  bottom: 47px;
+  left: 80px;
+}
+.footer__link_telegram {
+  position: fixed;
+  bottom: 47px;
+  right: 234px;
 }
 .footer__form {
   width: 680px;
@@ -3438,7 +3480,6 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    width: 295px;
   }
   .footer.media .footer__links-row {
     display: -webkit-box;

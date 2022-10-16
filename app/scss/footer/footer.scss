@@ -17,20 +17,25 @@
     padding-top: 37px;
     color: #4d4e4f;
   }
-  &__links {
-    padding-top: 41px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 857px;
-    width: 100%;
-  }
   &__link {
     color: var(--color--contrast-low);
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    &:first-child {
-      margin-right: 86px;
+    &_whatsapp{
+      position: fixed;
+      bottom: 47px;
+      right: 80px;
+    }
+    &_mail{
+      position: fixed;
+      bottom: 47px;
+      left: 80px;
+    }
+    &_telegram{
+      position: fixed;
+      bottom: 47px;
+      right: 234px;
     }
   }
   &__form {
@@ -152,7 +157,6 @@
   @media (max-width: 1540px) {
     .footer__links {
       flex-direction: column-reverse;
-      width: 295px;
     }
     .footer__links-row {
       display: flex;
