@@ -6,11 +6,12 @@
   .top-line {
     width: 100%;
     height: 62px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: #000;
     display: none;
+    z-index: 9;
   }
   &__bg {
     position: absolute;
@@ -38,8 +39,9 @@
     position: relative;
     width: 159px;
     height: 25px;
+    z-index: 20;
     img {
-      position: absolute;
+      position: fixed;
     }
   }
   .header__logo_dark {
@@ -51,9 +53,9 @@
   .mobile-btn-wrapper {
     padding: 12px 20px;
     background: #000;
-    position: absolute;
-    right: -20px;
-    top: -30px;
+    position: fixed;
+    right: 10px;
+    top: 0;
     border-radius: 0px 0px 0px 5px;
     display: none;
     z-index: 10;
@@ -93,7 +95,7 @@
     }
   }
   .nav {
-    position: absolute;
+    position: fixed;
     background: #000000;
     right: 0;
     top: -30px;
@@ -177,7 +179,7 @@
     }
   }
   &__links {
-    position: absolute;
+    position: fixed;
     right: 93px;
     top: 65px;
     z-index: 2;
@@ -292,7 +294,13 @@
     position: absolute;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+    &-row{
+      display: flex;
+    }
   }
   &__service {
     padding: 14px 46px;
@@ -333,9 +341,6 @@
       padding-right: 30px;
       padding-top: 30px;
     }
-    .header__top {
-      margin-bottom: 200px;
-    }
     .top-line {
       display: flex;
     }
@@ -366,7 +371,7 @@
   }
   @media (max-width: 1175px) {
     .header__top {
-      margin-bottom: 180px;
+      margin-bottom: 90px;
     }
     .header__title {
       font-size: 32px;
@@ -376,6 +381,18 @@
   @media (max-width: 980px) {
     .header__services {
       flex-direction: column;
+      align-items: center;
+      &-row{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        &:nth-child(2){
+          .header__service:first-child{
+            max-width: 133px;
+            width: 100%;
+          }
+        }
+      }
     }
     .header__service {
       &:first-child {
@@ -384,14 +401,14 @@
         margin-bottom: 17px;
       }
       &:nth-child(2) {
-        max-width: 250px;
-        width: 100%;
+        // max-width: 250px;
+        // width: 100%;
         margin-bottom: 17px;
       }
       &:last-child {
-        margin-right: 0;
-        max-width: 106px;
-        width: 100%;
+        // margin-right: 0;
+        // max-width: 106px;
+        // width: 100%;
       }
     }
   }
