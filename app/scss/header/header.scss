@@ -9,7 +9,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #000;
+    background: var(--line-bg);
     display: none;
     z-index: 9;
   }
@@ -52,7 +52,7 @@
   }
   .mobile-btn-wrapper {
     padding: 12px 20px;
-    background: #000;
+    background: var(--line-bg);
     position: fixed;
     right: 10px;
     top: 0;
@@ -96,7 +96,7 @@
   }
   .nav {
     position: fixed;
-    background: #000000;
+    background: var(--line-bg);
     right: 0;
     top: -30px;
     max-width: 375px;
@@ -160,7 +160,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
-        color: #ffffff;
+        color: var(--color--contrast-low);
       }
     }
     &__logo {

@@ -24,8 +24,8 @@
 }
 .modal__sertificat {
 	width: 560px;
-	height: 1051px;
-  margin-top: 180px;
+	height: auto;
+  margin-top: 450px;
   margin-bottom: 30px;
 	display: flex;
 	align-items: center;
@@ -76,4 +76,10 @@
 
 .modal--visible {
 	display: block;
+}
+@media(max-width: 768px){
+  .modal__sertificat{
+    max-width: 80%;
+    height: auto;
+  }
 }

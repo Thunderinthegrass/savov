@@ -96,6 +96,7 @@
         height: 77px;
         border-radius: 100%;
         margin-right: 24px;
+        flex-shrink: 0;
         img {
           object-fit: cover;
           width: 100%;

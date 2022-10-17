@@ -1,5 +1,6 @@
 .prices {
   margin-bottom: 300px;
+  padding-top: 200px;
   .container {
     padding-left: 80px;
     padding-right: 80px;
@@ -246,7 +247,7 @@
       text-transform: uppercase;
     }
     &-sale {
-      color: #f9f9f9;
+      color: var(--color-contrast-high);
       font-weight: 800;
       font-size: 20px;
       line-height: 24px;
@@ -319,6 +320,7 @@
   }
   @media (max-width: 768px){
     margin-bottom: 150px;
+    padding-top: 100px;
   }
   @media (max-width: 500px) {
     .prices__title {

@@ -378,7 +378,7 @@ function modalOrder() {
 modalOrder();
 
 function slider() {
-  const casesTabBody = document.querySelectorAll(".cases__tab-body");
+  const casesTabBody = document.querySelectorAll(".cases__tab-body-mini");
   let count = 0;
 
   for (let i = 0; i < casesTabBody.length; i++) {

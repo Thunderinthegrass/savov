@@ -37,6 +37,7 @@
   --color--contrast-low-white: #d6d6d6;
   --color--contrast-low-d6d6d6: #ffffff;
   --color--contrast-higher: #C2C6CB;
+  --line-bg: #f5f5f5;
 }
 
 @supports (--css: variables) {
@@ -78,5 +79,6 @@
     --color--contrast-low-white: #ffffff;
     --color--contrast-low-d6d6d6: #d6d6d6;
     --color--contrast-higher: #282828;
+    --line-bg: #000000;
   }
 }

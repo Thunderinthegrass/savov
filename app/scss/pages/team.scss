@@ -1,0 +1,119 @@
+.team {
+  padding-top: 103px;
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  &__title {
+    color: #a4a6a9;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    max-width: 530px;
+    width: 100%;
+    margin-bottom: 87px;
+  }
+  &__item-title {
+    color: var(--color--contrast-low);
+    font-size: 52px;
+    line-height: 62px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #4d4e4f;
+    margin-bottom: 32px;
+  }
+  .team__members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 80px;
+    margin-bottom: 74px;
+  }
+  .team__member {
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    padding: 17px 19px 19px 21px;
+    background: #191919;
+    border-radius: 20px;
+    display: flex;
+    gap: 22px;
+    &-img {
+      width: 136px;
+      height: 136px;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-sertificats {
+      position: absolute;
+      right: 19px;
+      bottom: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    &-sertificat {
+      width: 34px;
+      height: 26px;
+      border-radius: 3px;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-name {
+      display: flex;
+      flex-direction: column;
+      color: #a4a6a9;
+      font-size: 26px;
+      line-height: 31px;
+      font-weight: 800;
+      margin-bottom: 7px;
+    }
+    &-position {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 22px;
+      color: #a4a6a9;
+    }
+  }
+}
+.team.media {
+  @media (max-width: 1350px) {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  @media (max-width: 500px) {
+    .team__title {
+      font-size: 18px;
+      line-height: 150%;
+      margin-bottom: 50px;
+    }
+    .team__member {
+      flex-direction: column;
+      gap: 15px;
+      &-img{
+        width: 180px;
+        height: 180px;
+      }
+      &-sertificats {
+        position: static;
+      }
+      &-text{
+
+      }
+      &-name {
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+  }
+}
