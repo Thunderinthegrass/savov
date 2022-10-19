@@ -67,10 +67,13 @@
     width: 200px;
     height: 55px;
     text-align: center;
-    line-height: 55px;
+    font-weight: 400;
     font-size: 14px;
-    color: #fff;
-    background-color: #000;
+    line-height: 17px;
+    
+    color: var(--color-contrast-high);
+    border: 1px solid var(--color-contrast-high);
+    background-color: transparent;
     border-radius: 123px;
     transition: 0.3s;
     cursor: pointer;
@@ -88,9 +91,9 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: var(--color-contrast-high2);
+    color: var(--color-contrast-high);
     padding: 10px 24px;
-    border: 1px solid var(--color-contrast-high2);
+    border: 1px solid var(--color-contrast-high);
     border-radius: 123px;
     cursor: pointer;
   }

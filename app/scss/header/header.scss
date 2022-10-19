@@ -33,7 +33,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 109px;
+    margin-bottom: 229px;
   }
   &__logo {
     position: relative;
@@ -181,7 +181,7 @@
   &__links {
     position: fixed;
     right: 93px;
-    top: 65px;
+    top: 75px;
     z-index: 2;
     .link-phone {
       font-family: RFDewi, Arial, sans-serif;
@@ -456,6 +456,9 @@
     .container {
       padding-left: 20px;
       padding-right: 20px;
+    }
+    .header__logo{
+      left: 0;
     }
   }
 }

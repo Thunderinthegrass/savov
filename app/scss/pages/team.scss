@@ -15,6 +15,7 @@
   }
   &__item-title {
     color: var(--color--contrast-low);
+    font-weight: 600;
     font-size: 52px;
     line-height: 62px;
     padding-bottom: 32px;
@@ -59,6 +60,7 @@
       height: 26px;
       border-radius: 3px;
       overflow: hidden;
+      opacity: 0.55;
       img {
         object-fit: cover;
         width: 100%;
@@ -67,12 +69,13 @@
     }
     &-name {
       display: flex;
-      flex-direction: column;
       color: #a4a6a9;
       font-size: 26px;
       line-height: 31px;
-      font-weight: 800;
+      font-weight: 700;
       margin-bottom: 7px;
+      display: flex;
+      flex-direction: column;
     }
     &-position {
       font-weight: 300;
@@ -113,6 +116,7 @@
         flex-wrap: wrap;
         font-size: 20px;
         line-height: 25px;
+        gap: 10px;
       }
     }
   }

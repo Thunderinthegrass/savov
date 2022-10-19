@@ -378,7 +378,57 @@ function modalOrder() {
 modalOrder();
 
 function slider() {
-  const casesTabBody = document.querySelectorAll(".cases__tab-body-mini");
+  const casesTabBody = document.querySelector(".cases__tab-body");
+  let count = 0;
+
+  // for (let i = 0; i < casesTabBody.length; i++) {
+    //обертка кнопок фильтров
+    let nameTab = casesTabBody.querySelectorAll(".name-tab");
+    let bodyInfo = casesTabBody.querySelectorAll(".body-info");
+    let btnPrev = casesTabBody.querySelector(".btn-prev");
+    let btnNext = casesTabBody.querySelector(".btn-next");
+
+    console.log(btnPrev);
+
+    btnNext.addEventListener("click", () => {
+      if (count < nameTab.length - 1) {
+        count += 1;
+      } else {
+        count = 0;
+      }
+      for (let k = 0; k < nameTab.length; k++) {
+        // nameTab[k].classList.add('off');
+        // nameTab[count].classList.remove('off');
+        nameTab[k].classList.remove("tab--active");
+        nameTab[count].classList.add("tab--active");
+        bodyInfo[k].classList.remove("d-flex");
+        bodyInfo[count].classList.add("d-flex");
+        console.log(count);
+      }
+    });
+
+    btnPrev.addEventListener("click", () => {
+      if (count > 0) {
+        count -= 1;
+      } else {
+        count = nameTab.length - 1;
+      }
+      for (let k = 0; k < nameTab.length; k++) {
+        nameTab[k].classList.add("off");
+        nameTab[count].classList.remove("off");
+        nameTab[k].classList.remove("tab--active");
+        nameTab[count].classList.add("tab--active");
+        bodyInfo[k].classList.remove("d-flex");
+        bodyInfo[count].classList.add("d-flex");
+        console.log(count);
+      }
+    });
+  // }
+}
+slider();
+
+function sliderMobile() {
+  const casesTabBody = document.querySelector(".cases__tab-body-mini");
   let count = 0;
 
   for (let i = 0; i < casesTabBody.length; i++) {
@@ -423,4 +473,4 @@ function slider() {
     });
   }
 }
-slider();
+sliderMobile();

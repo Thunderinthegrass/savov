@@ -71,10 +71,10 @@
         display: none;
       }
       .btn-prev {
-        left: 33%;
+        left: 25%;
       }
       .btn-next {
-        right: 33%;
+        right: 25%;
         svg {
           transform: rotate(180deg);
         }
@@ -259,9 +259,6 @@
         margin-bottom: 0;
       }
     }
-    .btn-next {
-      right: 28%;
-    }
   }
   @media (max-width: 1242px) {
     .body-info__left {
@@ -290,41 +287,16 @@
   }
   @media (max-width: 1090px) {
     .btn-next {
-      right: 25%;
-    }
-    .btn-prev {
-      right: auto;
-      left: 30%;
-    }
-  }
-  @media (max-width: 934px) {
-    .btn-next {
-      right: 25%;
-    }
-    .btn-prev {
-      right: auto;
-      left: 25%;
-    }
-  }
-  @media (max-width: 850px) {
-    .btn-next {
-      right: 20%;
-    }
-    .btn-prev {
-      right: auto;
-      left: 20%;
-    }
-    .body-info__right {
-      width: auto;
-    }
-  }
-  @media (max-width: 678px) {
-    .btn-next {
       right: 15%;
     }
     .btn-prev {
       right: auto;
       left: 15%;
+    }
+  }
+  @media (max-width: 850px) {
+    .body-info__right {
+      width: auto;
     }
   }
   @media (max-width: 668px) {
@@ -349,6 +321,12 @@
       height: 80px;
       margin-bottom: 34px;
     }
+    .btn-next {
+      right: 20px;
+    }
+    .btn-prev {
+      left: 20px;
+    }
   }
   @media (max-width: 540px) {
     .body-info__right-img {
@@ -356,12 +334,6 @@
     }
     .body-info__right .works {
       width: 335px;
-    }
-    .btn-next {
-      right: 20px;
-    }
-    .btn-prev {
-      left: 20px;
     }
   }
   @media (max-width: 442px) {
