@@ -14,7 +14,6 @@
   }
   &__list {
     border: 1px solid #4d4e4f;
-    padding-left: 24px;
     overflow: hidden;
   }
   &__item {
@@ -24,6 +23,16 @@
     line-height: 19px;
     display: flex;
     align-items: center;
+    transition: .3s;
+    padding-left: 24px;
+    &:hover{
+      background: var(--list-hover);
+    }
+    &_first{
+      &:hover{
+        background: var(--bg);
+      }
+    }
     &-name {
       width: 264px;
       position: relative;
@@ -122,12 +131,16 @@
         &.rate {
           padding-bottom: 0;
           height: 165px;
+          background-color: var(--bg);
         }
       }
     }
   }
   &__buttons {
     position: relative;
+    &:hover{
+      background: var(--bg);
+    }
     &::before {
       position: absolute;
       content: "";
@@ -149,7 +162,8 @@
   }
   &__btn {
     padding: 16px 30px;
-    background: var(--color-contrast-high);
+    background: var(--color-contrast-high2);
+    color: var(--color--contrast-bgg);;
     border-radius: 10px;
     font-size: 20px;
     line-height: 24px;
@@ -248,7 +262,7 @@
     }
     &-sale {
       color: var(--color-contrast-high);
-      font-weight: 800;
+      font-weight: 700;
       font-size: 20px;
       line-height: 24px;
     }

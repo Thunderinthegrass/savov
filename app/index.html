@@ -30,7 +30,7 @@
         </button>
       </div>
     </div>
-    <header class="header media">
+    <header id="header" class="header media">
       <div class="top-line"></div>
       <img src="img/header/header-bg.svg" alt="" class="header__bg">
       <nav class="header__nav nav">
@@ -65,7 +65,7 @@
       <div class="container">
         <div class="header__top">
           <div class="header__logo">
-            <a href="#">
+            <a href="#header">
               <img class="header__logo_dark" src="img/header/logo-dark.svg" alt="Логотип">
               <img class="header__logo_light" src="img/header/logo-light.svg" alt="Логотип">
             </a>
@@ -103,7 +103,7 @@
               <img class="arrow-light" src="img/svg/arrow-bottom-light.svg" alt="">
             </div>
           </a>
-          <div class="header__services">
+          <div id="header__services" class="header__services">
             <div class="header__services-row">
               <div class="header__service">Контекстная, таргетированная и медийная реклама</div>
               <div class="header__service">Диджитал-стратегия</div>
@@ -271,113 +271,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="services-new">
-      <img class="services-new__img" src="img/services-new/bg.svg" alt="">
-      <div class="services-new__inner">
-        <div class="services-new__item"><span>Сайты</span><span>Сайты</span></div>
-        <div class="services-new__item"><span>Реклама</span><span>Реклама</span></div>
-        <div class="services-new__item"><span>Контент</span><span>Контент</span></div>
-      </div>
-    </div> -->
-    <!-- <div class="services media">
-      <div class="container">
-        <a href="#marketing" class="to-bottom_left">
-          <div class="arrows-dark">
-            <img class="arrow-dark" src="img/svg/arrow-bottom-dark.svg" alt="">
-            <img class="arrow-dark" src="img/svg/arrow-bottom-dark.svg" alt="">
-            <img class="arrow-dark" src="img/svg/arrow-bottom-dark.svg" alt="">
-          </div>
-          <div class="arrows-light">
-            <img class="arrow-light" src="img/svg/arrow-bottom-light.svg" alt="">
-            <img class="arrow-light" src="img/svg/arrow-bottom-light.svg" alt="">
-            <img class="arrow-light" src="img/svg/arrow-bottom-light.svg" alt="">
-          </div>
-        </a>
-        <a href="#marketing" class="to-bottom_right">
-          <div class="arrows-wrapper">
-            <img class="arrow-dark" src="img/svg/arrow-bottom-dark.svg" alt="">
-            <img class="arrow-light" src="img/svg/arrow-bottom-light.svg" alt="">
-          </div>
-        </a>
-        <h2 class="services__title">Работайте с экспертом лицом к лицу и забудьте о посредниках</h2>
-        <div class="services__inner">
-          <div id="marketing" class="services__item">
-            <p class="services__item-title">Маркетинг</p>
-            <div class="services__item-content">
-              <a href="#" class="services__item-link">
-                <img src="img/services/anatoly.jpg" alt="">
-              </a>
-            </div>
-            <div class="services__names">
-              <p class="services__name">Глеб</p>
-            </div>
-          </div>
-          <div class="services__item">
-            <p class="services__item-title">Продакшен</p>
-            <div class="services__item-content">
-              <a href="#" class="services__item-link">
-                <img src="img/services/gleb.jpg" alt="">
-              </a>
-            </div>
-            <div class="services__names">
-              <p class="services__name">Анатолий</p>
-              <p class="services__name">Алена</p>
-            </div>
-          </div>
-          <div class="services__item">
-            <p class="services__item-title">Разработка</p>
-            <div class="services__item-content">
-              <a href="#" class="services__item-link">
-                <img src="img/services/anatoly.jpg" alt="">
-              </a>
-            </div>
-            <div class="services__names">
-              <p class="services__name">Артем</p>
-              <p class="services__name">Миша</p>
-            </div>
-          </div>
-        </div>
-        <div class="services__inner-mobile">
-          <div class="services__tabs">
-            <div class="services__tab services__tab--active">Маркетинг</div>
-            <div class="services__tab">Продакшен</div>
-            <div class="services__tab">Разработка</div>
-          </div>
-          <div class="services__item tab--active">
-            <div class="services__item-content">
-              <a href="#" class="services__item-link">
-                <img src="img/services/anatoly.jpg" alt="">
-              </a>
-            </div>
-            <div class="services__names">
-              <p class="services__name">Глеб</p>
-            </div>
-          </div>
-          <div class="services__item">
-            <div class="services__item-content">
-              <a href="#" class="services__item-link">
-                <img src="img/services/gleb.jpg" alt="">
-              </a>
-            </div>
-            <div class="services__names">
-              <p class="services__name">Анатолий</p>
-              <p class="services__name">Алена</p>
-            </div>
-          </div>
-          <div class="services__item">
-            <div class="services__item-content">
-              <a href="#" class="services__item-link">
-                <img src="img/services/anatoly.jpg" alt="">
-              </a>
-            </div>
-            <div class="services__names">
-              <p class="services__name">Артем</p>
-              <p class="services__name">Миша</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div id="portfolio" class="portfolio media">
       <div class="container">
         <div class="portfolio__tab-row">
@@ -2720,7 +2613,7 @@
                 
               </input>
               <button class="download">
-                Скачать файл
+                Скачать бриф
               </button>
             </div>
             <div class="form__bottom">
@@ -2736,27 +2629,31 @@
         <div class="footer__bottom">
           <ul class="footer__nav">
             <li class="footer__nav-item">
-              <a href="#">Портфолио</a>
+              <a href="#portfolio">Портфолио</a>
             </li>
             <li class="footer__nav-item">
-              <a href="#">Услуги</a>
+              <a href="#header__services">Услуги</a>
             </li>
             <li class="footer__nav-item">
-              <a href="#">Эксперты</a>
+              <a href="#team">Эксперты</a>
             </li>
             <li class="footer__nav-item">
-              <a href="#">Цены</a>
+              <a href="#prices">Цены</a>
             </li>
           </ul>
-          <div class="footer__logo">
+          <a href="#header" class="footer__logo">
             <img src="img/footer/logo.svg" alt="">
-          </div>
+          </a>
         </div>
-        <div id="contacts" class="footer__sub-bottom">
-          <a href="#" class="footer__link footer__link_whatsapp">в whatsapp</a>
-          <a href="tel:79006566903" class="footer__link footer__link_phone">+7 900 656 69 03</a>
-          <a href="mailto:order@savov.ru" class="footer__link footer__link_mail">order@savov.ru</a>
-          <a href="#" class="footer__link footer__link_telegram">в telegram</a>
+        <div id="contacts" class="footer__sub-bottom sub-bottom">
+          <div class="sub-bottom__row">
+            <a href="mailto:order@savov.ru" class="footer__link footer__link_mail">order@savov.ru</a>
+            <a href="tel:79006566903" class="footer__link footer__link_phone">+7 900 656 69 03</a>
+          </div>
+          <div class="sub-bottom__row">
+            <a href="https://t.me/gleb_twain" class="footer__link footer__link_telegram">в telegram</a>
+            <a href="https://wa.me/89006566903" class="footer__link footer__link_whatsapp">в whatsapp</a>
+          </div>
         </div>
         <div class="cookies">
           Мы используем cookies для сбора обезличенных персональных данных. Они помогают настраивать рекламу и анализировать трафик. Оставаясь на сайте, вы соглашаетесь на сбор таких данных.

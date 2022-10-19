@@ -213,14 +213,25 @@
     }
     .footer__sub-bottom {
       padding-top: 15px;
-      margin-left: 20px;
-      position: static;
+      position: relative;
       display: flex;
-      max-width: 300px;
+      max-width: 100%;
       width: 100%;
       flex-wrap: wrap;
       margin-bottom: 150px;
-      border-top: 1px solid var(--color-contrast-high);
+      &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: var(--color-contrast-high);
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+      }
+      .footer__link{
+        margin-right: 0;
+      }
       .footer__link_mail {
         margin-bottom: 0;
         position: static;
@@ -236,6 +247,14 @@
       .footer__link_phone {
         margin-bottom: 15px;
         display: inline;
+      }
+    }
+    .sub-bottom{
+      display: flex;
+      flex-direction: column;
+      &__row{
+        display: flex;
+        gap: 24px;
       }
     }
   }
@@ -299,6 +318,13 @@
       padding-left: 20px;
       padding-right: 20px;
     }
+    .footer__sub-bottom{
+      padding-left: 20px;
+      padding-right: 20px;
+      &::before{
+        width: calc(100% - 40px);
+      }
+    }
     .form__inputs {
       margin-bottom: 45px;
     }
@@ -330,6 +356,15 @@
     .agreement {
       font-size: 14px;
       line-height: 20px;
+    }
+  }
+  @media (max-width: 360px){
+    .sub-bottom__row{
+      flex-direction: column;
+      gap: 0px;
+      .footer__link{
+        margin-bottom: 15px;
+      }
     }
   }
 }

@@ -32,7 +32,7 @@
       padding-top: 37px;
       padding-bottom: 28px;
       border-bottom: 1px solid var(--color-contrast-reverse);
-      cursor: url(../img/cursor.svg), pointer;
+      cursor: pointer;
       &:hover {
         .list-item__text {
           transform: translateX(85px);
@@ -78,7 +78,7 @@
       transition: 0.3s;
     }
     .list-item__text {
-      font-weight: 800;
+      font-weight: 700;
       font-size: 32px;
       line-height: 38px;
       color: var(--color--contrast-low-2);

@@ -38,6 +38,8 @@
   --color--contrast-low-d6d6d6: #ffffff;
   --color--contrast-higher: #C2C6CB;
   --line-bg: #f5f5f5;
+  --list-hover: #C2C6CB;
+  --team: #c2c6c9;
 }
 
 @supports (--css: variables) {
@@ -80,5 +82,7 @@
     --color--contrast-low-d6d6d6: #d6d6d6;
     --color--contrast-higher: #282828;
     --line-bg: #000000;
+    --list-hover: #1b1b1b;
+    --team: #191919;
   }
 }

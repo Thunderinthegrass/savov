@@ -55,28 +55,6 @@ function mobileMenu() {
 }
 mobileMenu();
 
-// function servicesTabs() {
-//   let servicesMobile = document.querySelector('.services__inner-mobile');
-//   let tabNav = servicesMobile.querySelectorAll('.services__tab');
-//   let servicesItem = servicesMobile.querySelectorAll('.services__item');
-
-//     function tabs(Tab, Button) {
-//     Button.forEach((elem, index) => {
-//       elem.addEventListener("click", (e) => {
-//         for (let i = 0; i < Button.length; i++) {
-//           Button[i].classList.remove("services__tab--active");
-//           e.target.classList.add("services__tab--active");
-//           Tab[i].classList.remove("tab--active");
-//         }
-//         Tab[index].classList.add("tab--active");
-//       });
-//     });
-//   }
-
-//   tabs(servicesItem, tabNav);
-// }
-// servicesTabs();
-
 function portfolioTab() {
   let tabNav = document.querySelectorAll(".portfolio__tab-btn");
   let servicesItem = document.querySelectorAll(".portfolio-tab_");
@@ -285,19 +263,6 @@ function moreReviews() {
       btn.innerHTML = 'Скрыть';
     }
   })
-
-  // let reviewsItemImg = document.querySelectorAll('.reviews__item-img');
-
-  // reviewsItemImg.forEach((elem) => {
-  //   console.log(elem.innerHTML)
-
-  //   if (elem.innerHTML == ''){
-  //     elem.style.height = '0px';
-  //     elem.style.margin = '0';
-  //     elem.nextElementSibling.style.height = '0px';
-  //     elem.parentElement.style.height = '0px';
-  //   }
-  // })
 }
 
 moreReviews();
@@ -381,14 +346,11 @@ function slider() {
   const casesTabBody = document.querySelector(".cases__tab-body");
   let count = 0;
 
-  // for (let i = 0; i < casesTabBody.length; i++) {
     //обертка кнопок фильтров
     let nameTab = casesTabBody.querySelectorAll(".name-tab");
     let bodyInfo = casesTabBody.querySelectorAll(".body-info");
     let btnPrev = casesTabBody.querySelector(".btn-prev");
     let btnNext = casesTabBody.querySelector(".btn-next");
-
-    console.log(btnPrev);
 
     btnNext.addEventListener("click", () => {
       if (count < nameTab.length - 1) {
@@ -403,7 +365,6 @@ function slider() {
         nameTab[count].classList.add("tab--active");
         bodyInfo[k].classList.remove("d-flex");
         bodyInfo[count].classList.add("d-flex");
-        console.log(count);
       }
     });
 
@@ -420,10 +381,8 @@ function slider() {
         nameTab[count].classList.add("tab--active");
         bodyInfo[k].classList.remove("d-flex");
         bodyInfo[count].classList.add("d-flex");
-        console.log(count);
       }
     });
-  // }
 }
 slider();
 
@@ -438,8 +397,6 @@ function sliderMobile() {
     let btnPrev = casesTabBody[i].querySelector(".btn-prev");
     let btnNext = casesTabBody[i].querySelector(".btn-next");
 
-    console.log(btnPrev);
-
     btnNext.addEventListener("click", () => {
       if (count < nameTab.length - 1) {
         count += 1;
@@ -453,7 +410,6 @@ function sliderMobile() {
         nameTab[count].classList.add("tab--active");
         bodyInfo[k].classList.remove("d-flex");
         bodyInfo[count].classList.add("d-flex");
-        console.log(count);
       }
     });
 
@@ -468,9 +424,10 @@ function sliderMobile() {
         nameTab[count].classList.remove("off");
         bodyInfo[k].classList.remove("d-flex");
         bodyInfo[count].classList.add("d-flex");
-        console.log(count);
       }
     });
   }
 }
 sliderMobile();
+
+
