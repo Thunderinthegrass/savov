@@ -37,7 +37,8 @@
     }
   }
   &__form {
-    width: 680px;
+    max-width: 680px;
+    width: 100%;
     border-radius: 24px;
     padding-left: 32px;
     padding-right: 32px;
@@ -151,13 +152,15 @@
     }
   }
   .cookies {
-    padding: 0 20px;
     font-weight: 400;
     font-size: 12px;
     line-height: 141%;
     color: #a4a6a9;
     opacity: 0.8;
     margin-bottom: 20px;
+    @media(max-width: 550px){
+      padding: 0 20px;
+    }
   }
 }
 .footer.media {
@@ -271,7 +274,8 @@
       }
     }
     .footer__form {
-      width: 600px;
+      // max-width: 600px;
+      // width: 100%;
     }
   }
   @media (max-width: 768px) {

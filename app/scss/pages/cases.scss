@@ -1,9 +1,10 @@
 .cases {
-  color: var(--bg-panel4d4e4f);
+  color: var(--color--contrast-low);
   background-color: var(--bg);
   .container{
     padding-left: 0;
     padding-right: 0;
+    overflow: hidden;
   }
   &__buttons {
     padding-top: 36px;
@@ -175,13 +176,14 @@
           margin-bottom: 43px;
         }
         .works__item {
-          padding-left: 20px;
+          padding-left: 30px;
           margin-bottom: 17px;
           position: relative;
+          font-weight: 400;
           &::before {
             position: absolute;
             content: "";
-            width: 9px;
+            width: 12px;
             height: 12px;
             border-radius: 100%;
             left: 0;
@@ -210,6 +212,7 @@
   @media (max-width: 1819px) {
     .tab-body__names {
       max-width: 300px;
+      padding-right: 10px;
     }
     .tab-body__info {
       justify-content: center;
@@ -265,7 +268,8 @@
       padding-left: 0;
     }
     .body-info__right-img {
-      max-width: 500px;
+      max-width: 100%;
+      width: 100%;
     }
     .body-info__left {
       max-width: 400px;
@@ -329,9 +333,6 @@
     }
   }
   @media (max-width: 540px) {
-    .body-info__right-img {
-      max-width: 400px;
-    }
     .body-info__right .works {
       width: 335px;
     }
@@ -368,12 +369,10 @@
       line-height: 22px;
       width: 275px;
       margin-bottom: 38px;
+      color: var(--filter-active);
     }
     .body-info__left .indicator-name {
       margin-bottom: 7px;
-    }
-    .body-info__right-img {
-      width: 335px;
     }
     .tab-body .body-info__right {
       overflow: visible;
@@ -381,18 +380,10 @@
     .body-info__right .works {
       width: 250px;
     }
-    .indicator-value {
-      width: 200px !important;
-    }
   }
   @media (max-width: 408px) {
     .body-info__left-title {
       width: 215px;
-    }
-  }
-  @media (max-width: 374px) {
-    .body-info__right-img {
-      width: 300px;
     }
   }
   @media (max-width: 370px) {

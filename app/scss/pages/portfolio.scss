@@ -1,5 +1,9 @@
 .portfolio {
   padding-top: 94px;
+  .container{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
   &-tab_{
     // display: none;
     &.portfolio--active{
