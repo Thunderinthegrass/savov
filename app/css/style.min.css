@@ -33,6 +33,7 @@
   --bg-panel4d4e4f: #4d4e4f;
   --menu-btn: #282828;
   --list: #282828;
+  --list2: #282828;
   --price: #282828;
   --color--contrast-low-white: #d6d6d6;
   --color--contrast-low-d6d6d6: #ffffff;
@@ -77,6 +78,7 @@
     --bg-panel4d4e4f: #ffffff;
     --menu-btn: #ffffff;
     --list: #a4a6a9;
+    --list2: #818181;
     --price: #ffffff;
     --color--contrast-low-white: #ffffff;
     --color--contrast-low-d6d6d6: #d6d6d6;
@@ -253,7 +255,8 @@ body {
 .modal-overlay-sertificat,
 .modal-overlay-video,
 .modal-overlay-order,
-.modal-overlay-team {
+.modal-overlay-team,
+.modal-overlay-sertificats {
   position: fixed;
   left: 0;
   top: 0;
@@ -586,6 +589,7 @@ body {
   max-width: 1442px;
   width: 100%;
   display: none;
+  color: var(--list);
 }
 .cases .tab-body .body-info__left {
   padding-left: 50px;
@@ -605,6 +609,7 @@ body {
   width: 330px;
   margin-bottom: 70px;
   display: inline-block;
+  color: var(--color--contrast-low);
 }
 .cases .tab-body .body-info__left .indicator {
   margin-bottom: 38px;
@@ -624,6 +629,9 @@ body {
 }
 .cases .tab-body .body-info__left .indicator-value span {
   display: inline-block;
+}
+.cases .tab-body .body-info__left .indicator-value span:first-child {
+  color: var(--list2);
 }
 .cases .tab-body .body-info__right {
   padding-left: 50px;
@@ -1468,6 +1476,13 @@ body {
   border-radius: 3px;
   overflow: hidden;
   opacity: 0.55;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.team .team__member-sertificat:hover {
+  opacity: 1;
 }
 .team .team__member-sertificat img {
   -o-object-fit: cover;
@@ -1497,7 +1512,7 @@ body {
 .team__slider-img {
   max-width: 960px;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   overflow: hidden;
   margin-left: 20px;
   margin-right: 20px;
@@ -1512,6 +1527,29 @@ body {
 }
 .team .modal__team {
   max-width: 960px;
+}
+.team .modal__sertificats {
+  max-width: 560px;
+}
+.team .sertificats__slider {
+  overflow: hidden;
+}
+.team .sertificats__slider .slick-slide {
+  overflow: hidden;
+}
+.team .sertificats__slider-img {
+  max-width: 560px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.team .sertificats__slider-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: top;
+     object-position: top;
 }
 
 @media (max-width: 1350px) {

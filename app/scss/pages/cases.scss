@@ -43,14 +43,12 @@
       width: 368px;
       span {
         display: inline-block;
-        // transform: scale(1.32, 1) translateX(20px);
       }
     }
     &:nth-child(2) {
       width: 168px;
       span {
         display: inline-block;
-        // transform: scale(1.32, 1) translateX(6px);
       }
     }
   }
@@ -109,6 +107,7 @@
       max-width: 1442px;
       width: 100%;
       display: none;
+      color: var(--list);
       &__left {
         padding-left: 50px;
         padding-top: 12px;
@@ -124,9 +123,9 @@
           font-size: 22px;
           line-height: 26px;
           width: 330px;
-          // transform: scale(1.37, 1) translateX(40px);
           margin-bottom: 70px;
           display: inline-block;
+          color: var(--color--contrast-low);
         }
         .indicator {
           margin-bottom: 38px;
@@ -145,6 +144,9 @@
           width: 300px;
           span {
             display: inline-block;
+            &:first-child{
+              color: var(--list2);
+            }
           }
         }
       }
