@@ -216,38 +216,38 @@ function modal() {
 
 modal();
 
-// function modalVideo() {
-//   const btns = document.querySelectorAll(".btn-video");
-//   const modalOverlay = document.querySelectorAll(".modal-overlay-video");
-//   const modals = document.querySelectorAll(".modal__video");
-//   let videoModal = document.querySelector('.video-modal');
+function modalVideo() {
+  const btns = document.querySelectorAll(".btn-video");
+  const modalOverlay = document.querySelectorAll(".modal-overlay-video");
+  const modals = document.querySelectorAll(".modal__video");
+  let videoModal = document.querySelector('.video-modal');
 
-//   btns.forEach((el, id) => {
-//     el.addEventListener("click", (e) => {
-//       let path = e.currentTarget.getAttribute("data-path");
+  btns.forEach((el, id) => {
+    el.addEventListener("click", (e) => {
+      let path = e.currentTarget.getAttribute("data-path");
 
-//       modals.forEach((el) => {
-//         el.classList.remove("modal--visible");
-//       });
+      modals.forEach((el) => {
+        el.classList.remove("modal--visible");
+      });
 
-//       document.querySelector(`[data-target="${path}"]`).classList.add("modal--visible");
-//       modalOverlay[id].classList.add("modal-overlay--visible");
-//     });
+      document.querySelector(`[data-target="${path}"]`).classList.add("modal--visible");
+      modalOverlay[id].classList.add("modal-overlay--visible");
+    });
 
-//     modalOverlay[id].addEventListener("click", (e) => {
-//       console.log(e.target);
+    modalOverlay[id].addEventListener("click", (e) => {
+      console.log(e.target);
 
-//       if (e.target == modalOverlay[id]) {
-//         modalOverlay[id].classList.remove("modal-overlay--visible");
-//         modals.forEach((el) => {
-//           el.classList.remove("modal--visible");
-//         });
-//       }
-//     });
-//   });
-// }
+      if (e.target == modalOverlay[id]) {
+        modalOverlay[id].classList.remove("modal-overlay--visible");
+        modals.forEach((el) => {
+          el.classList.remove("modal--visible");
+        });
+      }
+    });
+  });
+}
 
-// modalVideo();
+modalVideo();
 
 function modalTeam() {
   const btns = document.querySelectorAll(".btn-team");
@@ -329,6 +329,9 @@ $(document).ready(function(){
     arrows: true,
     variableWidth: true,
     centerMode: true,
+    infinite: false,
+    prevArrow: `<button type="button" class="sertificat-arrow sertificat-arrow-prew"><img src="img/team/arrow.svg" alt=""></button>`,
+    nextArrow: `<button type="button" class="sertificat-arrow sertificat-arrow-next"><img src="img/team/arrow.svg" alt=""></button>`,
   });
 });
 

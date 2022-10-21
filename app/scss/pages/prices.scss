@@ -23,13 +23,13 @@
     line-height: 19px;
     display: flex;
     align-items: center;
-    transition: .3s;
+    transition: 0.3s;
     padding-left: 24px;
-    &:hover{
+    &:hover {
       background: var(--list-hover);
     }
-    &_first{
-      &:hover{
+    &_first {
+      &:hover {
         background: var(--bg);
       }
     }
@@ -136,7 +136,7 @@
   }
   &__buttons {
     position: relative;
-    &:hover{
+    &:hover {
       background: var(--bg);
     }
     &::before {
@@ -161,7 +161,7 @@
   &__btn {
     padding: 16px 30px;
     background: var(--color-contrast-high2);
-    color: var(--color--contrast-bgg);;
+    color: var(--color--contrast-bgg);
     border-radius: 10px;
     font-size: 20px;
     line-height: 24px;
@@ -227,7 +227,11 @@
     }
     .slick-active {
       .prices__slide-top {
-        background: var(--color--contrast-low-d6d6d6);
+        background: #D6D6D6;
+        color: #4D4E4F;
+        .prices__price{
+          color:#191919;
+        }
       }
     }
   }
@@ -238,8 +242,11 @@
     margin: 0 6px;
     width: 133px;
     transition: 0.3s;
+    color: #A4A6A9;
     .prices__name {
-      color: var(--color-contrast-reverse);
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
     }
   }
   &__sales {
@@ -330,7 +337,7 @@
       }
     }
   }
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     margin-bottom: 150px;
     padding-top: 100px;
   }
