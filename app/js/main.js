@@ -310,6 +310,7 @@ function modalTeamSertificats() {
   const modalOverlay = document.querySelectorAll(".modal-overlay-sertificats");
   const modals = document.querySelectorAll(".modal__sertificats");
   let teamModal = document.querySelector('.sertificats-modal');
+  let closeBtn = document.querySelectorAll('.modal__sert-close');
 
   btns.forEach((el, id) => {
     el.addEventListener("click", (e) => {
@@ -326,7 +327,7 @@ function modalTeamSertificats() {
     modalOverlay[id].addEventListener("click", (e) => {
       console.log(e.target);
 
-      if (e.target == modalOverlay[id]) {
+      if ((e.target == modalOverlay[id]) || (e.target == closeBtn[id])) {
         modalOverlay[id].classList.remove("modal-overlay--visible");
         modals.forEach((el) => {
           el.classList.remove("modal--visible");

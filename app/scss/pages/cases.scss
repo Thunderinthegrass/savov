@@ -40,13 +40,11 @@
     cursor: pointer;
     transition: 0.3s;
     &:first-child {
-      width: 368px;
       span {
         display: inline-block;
       }
     }
     &:nth-child(2) {
-      width: 168px;
       span {
         display: inline-block;
       }
