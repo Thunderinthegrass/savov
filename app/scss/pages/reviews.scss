@@ -5,7 +5,7 @@
     padding-right: 80px;
   }
   &__title {
-    color: var(--bg-panel4d4e4f);
+    color: #d6d6d6;
     font-size: 27px;
     font-weight: 400;
     line-height: 42px;
@@ -63,6 +63,7 @@
     }
     &-title {
       height: 40px;
+      color: #a4a6a9;
     }
   }
   .btn-wrapper {
@@ -75,8 +76,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: var(--color-contrast-high);
-    border: 1px solid var(--color-contrast-high);
+    color: #c2c6cb;
+    border: 1px solid #c2c6cb;
     background-color: transparent;
     border-radius: 123px;
     transition: 0.3s;

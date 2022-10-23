@@ -88,10 +88,6 @@
           transition: 0.3s;
         }
       }
-      // ~ .header__nav {
-      //   display: block;
-      //   border: 1px solid #ffffff;
-      // }
     }
   }
   .nav {
@@ -179,7 +175,7 @@
     }
   }
   &__links {
-    position: fixed;
+    position: absolute;
     right: 80px;
     top: 45px;
     z-index: 10;
@@ -188,14 +184,14 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 22px;
-      color: var(--color--contrast-low);
+      color: #d9d9d9;
       margin-right: 30px;
     }
   }
   .request-btn {
     padding: 10px 40px;
     border: 1px solid #4d4e4f;
-    color: var(--color--contrast-low);
+    color: #d6d6d6;
     background-color: var(--bg);
     border-radius: 123px;
     font-weight: 400;

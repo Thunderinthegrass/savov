@@ -554,7 +554,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 36px;
-  color: var(--tab-color);
+  color: #a4a6a9;
   opacity: 0.34;
   font-weight: 400;
   font-size: 18px;
@@ -582,7 +582,7 @@ body {
   max-width: 1442px;
   width: 100%;
   display: none;
-  color: var(--list);
+  color: #a4a6a9;
 }
 .cases .tab-body .body-info__left {
   padding-left: 50px;
@@ -602,7 +602,7 @@ body {
   width: 330px;
   margin-bottom: 70px;
   display: inline-block;
-  color: var(--color--contrast-low);
+  color: #d6d6d6;
 }
 .cases .tab-body .body-info__left .indicator {
   margin-bottom: 38px;
@@ -1402,7 +1402,7 @@ body {
   padding-right: 80px;
 }
 .team__title {
-  color: var(--list);
+  color: #a4a6a9;
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
@@ -1411,7 +1411,7 @@ body {
   margin-bottom: 87px;
 }
 .team__item-title {
-  color: var(--color--contrast-low);
+  color: #d6d6d6;
   font-weight: 600;
   font-size: 52px;
   line-height: 62px;
@@ -1434,7 +1434,7 @@ body {
   width: 100%;
   padding: 17px 19px 19px 21px;
   background: var(--team);
-  color: var(--list);
+  color: #a4a6a9;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1884,15 +1884,11 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #4d4e4f;
+  color: #D6D6D6;
   margin-bottom: 36px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-}
-.portfolio__tab-btn.portfolio__nav--active {
-  color: var(--filter-active) !important;
-  border-color: var(--filter-active) !important;
 }
 .portfolio__filters-row {
   padding-bottom: 78px;
@@ -1913,10 +1909,6 @@ body {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-}
-.portfolio__filters-btn.portfolio__nav--active {
-  color: var(--filter-active) !important;
-  border-color: var(--filter-active) !important;
 }
 .portfolio__inner {
   display: none;
@@ -2193,7 +2185,7 @@ body {
   padding-right: 80px;
 }
 .sertificats__title {
-  color: var(--bg-panel4d4e4f);
+  color: #d6d6d6;
   font-size: 27px;
   font-weight: 400;
   line-height: 42px;
@@ -2214,7 +2206,7 @@ body {
   font-weight: 400;
   font-size: 28px;
   line-height: 150%;
-  color: var(--color-contrast-high);
+  color: #a4a6a9;
 }
 .sertificats__img-wrapper {
   -webkit-box-flex: 1;
@@ -2283,7 +2275,7 @@ body {
   padding-right: 80px;
 }
 .prices__title {
-  color: var(--bg-panel4d4e4f);
+  color: #d6d6d6;
   font-size: 27px;
   font-weight: 400;
   line-height: 42px;
@@ -2324,6 +2316,7 @@ body {
   display: block;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  color: #a4a6a9;
 }
 .prices__item-name::after {
   position: absolute;
@@ -2385,14 +2378,14 @@ body {
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 13px;
-  color: var(--list);
+  color: #a4a6a9;
   text-transform: uppercase;
 }
 .prices__item .rate__price {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  color: var(--price);
+  color: #f9f9f9;
   margin-bottom: 13px;
 }
 .prices__item .rate__info {
@@ -2401,8 +2394,21 @@ body {
   color: #4d4e4f;
 }
 .prices__item .rate__info-link {
-  color: var(--color--contrast-low-white);
+  color: #d6d6d6;
   text-decoration: underline;
+  position: relative;
+  padding-right: 25px;
+  display: inline-block;
+  max-width: 230px;
+}
+.prices__item .rate__info-link::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  width: 16px;
+  height: 12px;
+  background-image: url(../img/prices/link-arrow.svg);
 }
 .prices__item .rate.express::before {
   width: 110%;
@@ -2707,7 +2713,7 @@ body {
   padding-right: 80px;
 }
 .clients__title {
-  color: var(--bg-panel4d4e4f);
+  color: #d6d6d6;
   font-size: 27px;
   font-weight: 400;
   line-height: 42px;
@@ -2920,7 +2926,7 @@ body {
   padding-right: 80px;
 }
 .reviews__title {
-  color: var(--bg-panel4d4e4f);
+  color: #d6d6d6;
   font-size: 27px;
   font-weight: 400;
   line-height: 42px;
@@ -2996,6 +3002,7 @@ body {
 }
 .reviews__item-title {
   height: 40px;
+  color: #a4a6a9;
 }
 .reviews .btn-wrapper {
   padding: 50px 0;
@@ -3007,8 +3014,8 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: var(--color-contrast-high);
-  border: 1px solid var(--color-contrast-high);
+  color: #c2c6cb;
+  border: 1px solid #c2c6cb;
   background-color: transparent;
   border-radius: 123px;
   -webkit-transition: 0.3s;
@@ -3161,7 +3168,7 @@ body {
   font-weight: 400;
   font-size: 28px;
   line-height: 150%;
-  color: var(--color-contrast-reverse);
+  color: #a4a6a9;
 }
 .industry__lists {
   display: -webkit-box;
@@ -3192,12 +3199,13 @@ body {
   -webkit-transform: translateX(85px);
       -ms-transform: translateX(85px);
           transform: translateX(85px);
+  color: #d6d6d6;
 }
 .industry__list .industry__list-item:hover .list-item__number::before {
   opacity: 1;
 }
 .industry__list .industry__list-item:hover .list-item__count {
-  color: var(--color--contrast-low-2);
+  color: #c2c6cb;
 }
 .industry__list .text-left {
   display: -webkit-box;
@@ -3211,7 +3219,7 @@ body {
   margin-right: 31px;
   width: 49px;
   text-align: center;
-  color: var(--color-contrast-high);
+  color: #4d4e4f;
   position: relative;
 }
 .industry__list .list-item__number::before {
@@ -3234,7 +3242,7 @@ body {
   font-weight: 300;
   font-size: 32px;
   line-height: 38px;
-  color: var(--color-contrast-high);
+  color: #4d4e4f;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -3243,7 +3251,7 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
-  color: var(--color--contrast-low-2);
+  color: #a4a6a9;
   position: relative;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -3634,7 +3642,7 @@ body {
   color: var(--color--contrast-low);
 }
 .header__links {
-  position: fixed;
+  position: absolute;
   right: 80px;
   top: 45px;
   z-index: 10;
@@ -3644,13 +3652,13 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: var(--color--contrast-low);
+  color: #d9d9d9;
   margin-right: 30px;
 }
 .header .request-btn {
   padding: 10px 40px;
   border: 1px solid #4d4e4f;
-  color: var(--color--contrast-low);
+  color: #d6d6d6;
   background-color: var(--bg);
   border-radius: 123px;
   font-weight: 400;
@@ -3969,7 +3977,7 @@ body {
   line-height: 150%;
   max-width: 500px;
   width: 100%;
-  color: #4d4e4f;
+  color: #a4a6a9;
   margin-bottom: 40px;
 }
 .footer__link {
@@ -3980,17 +3988,17 @@ body {
 }
 .footer__link_whatsapp {
   position: fixed;
-  bottom: 47px;
+  bottom: 170px;
   right: 80px;
 }
 .footer__link_mail {
   position: fixed;
-  bottom: 47px;
+  bottom: 170px;
   left: 80px;
 }
 .footer__link_telegram {
   position: fixed;
-  bottom: 47px;
+  bottom: 170px;
   right: 234px;
 }
 .footer__link_phone {
@@ -4090,7 +4098,7 @@ body {
   margin-bottom: 30px;
 }
 .footer .form__bottom .send-btn {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   margin-right: 25px;
@@ -4118,6 +4126,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 80px;
+  margin-bottom: 57px;
 }
 .footer__nav {
   display: -webkit-box;
@@ -4137,6 +4146,20 @@ body {
 .footer__nav-item a {
   color: var(--color--contrast-low);
 }
+.footer .privacy-policy-link {
+  color: #afafaf;
+  display: inline-block;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 141%;
+  margin-bottom: 11px;
+}
+@media (max-width: 550px) {
+  .footer .privacy-policy-link {
+    padding: 0 20px;
+  }
+}
 .footer .cookies {
   font-weight: 400;
   font-size: 12px;
@@ -4144,6 +4167,8 @@ body {
   color: #a4a6a9;
   opacity: 0.8;
   margin-bottom: 20px;
+  max-width: 771px;
+  width: 100%;
 }
 @media (max-width: 550px) {
   .footer .cookies {
@@ -4466,6 +4491,7 @@ body {
 .modal__sertificat-icon:nth-child(1){background-image:url(../img/sertificats/fb.svg)}
 .modal__sertificat-icon:nth-child(2){background-image:url(../img/sertificats/twitter.svg)}
 .team .modal__team-close,.team .modal__sert-close{background-image:url(../img/svg/close.svg)}
+.prices__item .rate__info-link::after{background-image:url(../img/prices/link-arrow.svg)}
 .industry__list .list-item__number::before{background-image:url(../img/portfolio/arrow-list.svg)}
 }
 

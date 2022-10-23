@@ -80,7 +80,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 36px;
-        color: var(--tab-color);
+        color: #a4a6a9;
         opacity: 0.34;
         font-weight: 400;
         font-size: 18px;
@@ -105,7 +105,7 @@
       max-width: 1442px;
       width: 100%;
       display: none;
-      color: var(--list);
+      color: #a4a6a9;
       &__left {
         padding-left: 50px;
         padding-top: 12px;
@@ -123,7 +123,7 @@
           width: 330px;
           margin-bottom: 70px;
           display: inline-block;
-          color: var(--color--contrast-low);
+          color: #d6d6d6;
         }
         .indicator {
           margin-bottom: 38px;

@@ -16,7 +16,7 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 150%;
-    color: var(--color-contrast-reverse);
+    color: #a4a6a9;
   }
   &__lists {
     display: flex;
@@ -36,12 +36,13 @@
       &:hover {
         .list-item__text {
           transform: translateX(85px);
+          color: #d6d6d6;
         }
         .list-item__number::before {
           opacity: 1;
         }
         .list-item__count {
-          color: var(--color--contrast-low-2);
+          color: #c2c6cb;
         }
       }
     }
@@ -55,7 +56,7 @@
       margin-right: 31px;
       width: 49px;
       text-align: center;
-      color: var(--color-contrast-high);
+      color: #4d4e4f;
       position: relative;
       &::before {
         position: absolute;
@@ -74,14 +75,14 @@
       font-weight: 300;
       font-size: 32px;
       line-height: 38px;
-      color: var(--color-contrast-high);
+      color: #4d4e4f;
       transition: 0.3s;
     }
     .list-item__text {
       font-weight: 700;
       font-size: 32px;
       line-height: 38px;
-      color: var(--color--contrast-low-2);
+      color: #a4a6a9;
       position: relative;
       transition: 0.3s;
     }
