@@ -36,6 +36,11 @@
   &__item {
     color: var(--color-contrast-high);
     cursor: pointer;
+    &:hover{
+      .youtube-icon{
+        fill: #d60303;
+      }
+    }
     &-img {
       margin-bottom: 16px;
       width: 100%;
@@ -47,12 +52,13 @@
         height: 100%;
       }
       .youtube-icon {
-        width: 100px;
-        height: 70px;
+        height: 60px;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translateX(-50%) translateY(-50%);
+        fill: #ff0000;
+        transition: .2s;
       }
     }
     &-title {

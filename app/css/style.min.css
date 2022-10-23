@@ -2731,6 +2731,9 @@ body {
   color: var(--color-contrast-high);
   cursor: pointer;
 }
+.reviews__item:hover .youtube-icon {
+  fill: #d60303;
+}
 .reviews__item-img {
   margin-bottom: 16px;
   width: 100%;
@@ -2744,14 +2747,17 @@ body {
   height: 100%;
 }
 .reviews__item-img .youtube-icon {
-  width: 100px;
-  height: 70px;
+  height: 60px;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
+  fill: #ff0000;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 .reviews__item-title {
   height: 40px;

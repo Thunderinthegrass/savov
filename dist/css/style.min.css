@@ -33,6 +33,7 @@
   --bg-panel4d4e4f: #4d4e4f;
   --menu-btn: #282828;
   --list: #282828;
+  --list2: #282828;
   --price: #282828;
   --color--contrast-low-white: #d6d6d6;
   --color--contrast-low-d6d6d6: #ffffff;
@@ -77,6 +78,7 @@
     --bg-panel4d4e4f: #ffffff;
     --menu-btn: #ffffff;
     --list: #a4a6a9;
+    --list2: #818181;
     --price: #ffffff;
     --color--contrast-low-white: #ffffff;
     --color--contrast-low-d6d6d6: #d6d6d6;
@@ -253,7 +255,8 @@ body {
 .modal-overlay-sertificat,
 .modal-overlay-video,
 .modal-overlay-order,
-.modal-overlay-team {
+.modal-overlay-team,
+.modal-overlay-sertificats {
   position: fixed;
   left: 0;
   top: 0;
@@ -586,6 +589,7 @@ body {
   max-width: 1442px;
   width: 100%;
   display: none;
+  color: var(--list);
 }
 .cases .tab-body .body-info__left {
   padding-left: 50px;
@@ -605,6 +609,7 @@ body {
   width: 330px;
   margin-bottom: 70px;
   display: inline-block;
+  color: var(--color--contrast-low);
 }
 .cases .tab-body .body-info__left .indicator {
   margin-bottom: 38px;
@@ -624,6 +629,9 @@ body {
 }
 .cases .tab-body .body-info__left .indicator-value span {
   display: inline-block;
+}
+.cases .tab-body .body-info__left .indicator-value span:first-child {
+  color: var(--list2);
 }
 .cases .tab-body .body-info__right {
   padding-left: 50px;
@@ -1461,13 +1469,20 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  opacity: 0.55;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.team .team__member-sertificats:hover {
+  opacity: 1;
 }
 .team .team__member-sertificat {
   width: 34px;
   height: 26px;
   border-radius: 3px;
   overflow: hidden;
-  opacity: 0.55;
+  cursor: pointer;
 }
 .team .team__member-sertificat img {
   -o-object-fit: cover;
@@ -1497,7 +1512,7 @@ body {
 .team__slider-img {
   max-width: 960px;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   overflow: hidden;
   margin-left: 20px;
   margin-right: 20px;
@@ -1512,6 +1527,55 @@ body {
 }
 .team .modal__team {
   max-width: 960px;
+}
+.team .modal__sertificats {
+  max-width: 560px;
+}
+.team .sertificats__slider {
+  position: relative;
+}
+.team .sertificats__slider-img {
+  max-width: 560px !important;
+  width: 100%;
+  height: 90vh;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.team .sertificats__slider-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.team .sertificats__slider .sertificat-arrow {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  z-index: 999;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.team .sertificats__slider .sertificat-arrow:hover {
+  opacity: 1;
+}
+.team .sertificats__slider .sertificat-arrow-prew {
+  left: -100px;
+  top: 0;
+}
+.team .sertificats__slider .sertificat-arrow-next {
+  right: -100px;
+  top: 0;
+}
+.team .sertificats__slider .sertificat-arrow-next img {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 @media (max-width: 1350px) {
@@ -2212,7 +2276,11 @@ body {
   width: 141px !important;
 }
 .prices-mobile__slider-top .slick-active .prices__slide-top {
-  background: var(--color--contrast-low-d6d6d6);
+  background: #D6D6D6;
+  color: #4D4E4F;
+}
+.prices-mobile__slider-top .slick-active .prices__slide-top .prices__price {
+  color: #191919;
 }
 .prices__slide-top {
   padding: 12px 0 12px 15px;
@@ -2223,9 +2291,12 @@ body {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  color: #A4A6A9;
 }
 .prices__slide-top .prices__name {
-  color: var(--color-contrast-reverse);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
 }
 .prices__sales {
   display: none;
@@ -3113,12 +3184,11 @@ body {
 }
 .header .top-line {
   width: 100%;
-  height: 62px;
+  height: 82px;
   position: fixed;
   top: 0;
   left: 0;
-  background: var(--line-bg);
-  display: none;
+  background: #131313;
   z-index: 9;
 }
 .header__bg {
@@ -3327,7 +3397,7 @@ body {
   position: fixed;
   right: 80px;
   top: 45px;
-  z-index: 2;
+  z-index: 10;
 }
 .header__links .link-phone {
   font-family: RFDewi, Arial, sans-serif;
@@ -3354,7 +3424,7 @@ body {
   font-weight: 800;
   font-size: 74px;
   line-height: 89px;
-  color: var(--color--contrast-low);
+  color: #D6D6D6;
   font-family: RFDewi, Arial, sans-serif;
   margin-bottom: 50px;
 }
@@ -3505,6 +3575,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 62px;
+    background: #000;
   }
   .header.media .header__logo {
     width: 120px;

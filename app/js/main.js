@@ -329,7 +329,6 @@ $(document).ready(function(){
     arrows: true,
     variableWidth: true,
     centerMode: true,
-    infinite: false,
     prevArrow: `<button type="button" class="sertificat-arrow sertificat-arrow-prew"><img src="img/team/arrow.svg" alt=""></button>`,
     nextArrow: `<button type="button" class="sertificat-arrow sertificat-arrow-next"><img src="img/team/arrow.svg" alt=""></button>`,
   });
