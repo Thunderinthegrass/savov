@@ -1878,7 +1878,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid var(--color-contrast-reverse);
+  border-bottom: 1px solid #4d4e4f;
 }
 .portfolio__tab-btn {
   font-weight: 400;
@@ -3185,7 +3185,7 @@ body {
           justify-content: space-between;
   padding-top: 37px;
   padding-bottom: 28px;
-  border-bottom: 1px solid var(--color-contrast-reverse);
+  border-bottom: 1px solid #4d4e4f;
   cursor: pointer;
 }
 .industry__list .industry__list-item:hover .list-item__text {
@@ -3682,7 +3682,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-top: 1px solid var(--color-contrast-high);
+  border-top: 1px solid #4d4e4f;
   padding-top: 40px;
   position: relative;
 }
