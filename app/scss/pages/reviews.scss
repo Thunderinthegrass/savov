@@ -70,13 +70,11 @@
     text-align: center;
   }
   &__more-btn {
-    width: 200px;
-    height: 55px;
+    padding: 10px 24px;
     text-align: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    
     color: var(--color-contrast-high);
     border: 1px solid var(--color-contrast-high);
     background-color: transparent;

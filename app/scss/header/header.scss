@@ -201,6 +201,11 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    transition: .3s;
+    &:hover {
+      background: #d1d1d1;
+      color: #000;
+    }
   }
   .switch-theme-btn {
     position: absolute;
