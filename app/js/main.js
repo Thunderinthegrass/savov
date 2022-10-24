@@ -407,6 +407,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    infinite: false,
     asNavFor: '.prices-mobile__slider-top'
   });
 });

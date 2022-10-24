@@ -175,7 +175,7 @@
     }
   }
   &__links {
-    position: absolute;
+    position: fixed;
     right: 80px;
     top: 45px;
     z-index: 10;
@@ -355,6 +355,7 @@
       left: -10px;
     }
     .header__links {
+      position: absolute;
       top: auto;
       bottom: 40px;
       right: 50%;
