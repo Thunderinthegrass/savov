@@ -2828,6 +2828,11 @@ body {
   transition: 0.3s;
   opacity: 0;
 }
+.clients__logo_hover.bazadance {
+  -webkit-transform: translate(-50%, -58%);
+      -ms-transform: translate(-50%, -58%);
+          transform: translate(-50%, -58%);
+}
 
 @media (max-width: 1700px) {
   .clients.media .clients__item {
@@ -3642,7 +3647,7 @@ body {
   color: var(--color--contrast-low);
 }
 .header__links {
-  position: absolute;
+  position: fixed;
   right: 80px;
   top: 45px;
   z-index: 10;
@@ -3840,6 +3845,7 @@ body {
     left: -10px;
   }
   .header.media .header__links {
+    position: absolute;
     top: auto;
     bottom: 40px;
     right: 50%;
