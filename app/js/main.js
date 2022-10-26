@@ -667,3 +667,37 @@ function sticky() {
 sticky();
 
 
+function clientsHeight() {
+  let container = document.querySelector('.clients__inner_mobile');
+  let clients = container.querySelectorAll('.clients__item');
+
+  clients.forEach((item) => {
+    let clientsWidth = item.offsetWidth;
+    item.style.height = `${item.offsetWidth}px`;
+  })
+}
+
+clientsHeight();
+
+function membersHeight() {
+  let memberImg = document.querySelectorAll('.team__member-img');
+
+  memberImg.forEach((item) => {
+    item.style.height = `${item.offsetWidth}px`;
+  })
+}
+
+membersHeight();
+
+function mailFixed() {
+  let mail = document.querySelector('.footer__link_mail');
+  let container = document.querySelector('.container');
+  let containerWidth = container.offsetWidth;
+  let docWidth = document.documentElement.clientWidth;
+  let left = ((docWidth - containerWidth) / 2) + 80;
+  console.log(docWidth)
+  console.log(containerWidth)
+  console.log(left)
+  // mail.style.left = 10;
+}
+mailFixed()

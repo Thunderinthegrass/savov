@@ -57,8 +57,17 @@
       display: flex;
       gap: 10px;
       opacity: 0.55;
-      transition: .3s;
-      &:hover{
+      transition: 0.3s;
+      &-wrapper {
+        overflow-x: auto;
+        @media(max-width: 537px){
+          width: 100%;
+        }
+        .team__member-sertificats {
+          width: 210px;
+        }
+      }
+      &:hover {
         opacity: 1;
       }
     }
@@ -91,13 +100,13 @@
   }
   &__slider {
     position: relative;
-     &-img {
+    &-img {
       max-width: 960px;
       width: 100%;
       height: 95vh;
       overflow: hidden;
-      margin-left: 20px;
-      margin-right: 20px;
+      // margin-left: 20px;
+      // margin-right: 20px;
       img {
         width: 100%;
         height: 100%;
@@ -105,81 +114,81 @@
         object-position: top;
       }
     }
-    .team-arrow{
+    .team-arrow {
       position: absolute;
       width: 100px;
       height: 10%;
       z-index: 999;
       text-align: center;
       cursor: pointer;
-      opacity: .6;
-      transition: .3s;
-      &:hover{
+      opacity: 0.6;
+      transition: 0.3s;
+      &:hover {
         opacity: 1;
       }
-      &-prew{
+      &-prew {
         left: -100px;
         top: 50%;
         padding-left: 20px;
       }
-      &-next{
+      &-next {
         right: -100px;
         top: 50%;
         padding-right: 20px;
-        img{
+        img {
           transform: rotate(180deg);
         }
       }
     }
   }
-  .modal__team{
+  .modal__team {
     max-width: 960px;
     z-index: 20;
   }
-  .modal__sertificats{
+  .modal__sertificats {
     max-width: 560px;
   }
-  .sertificats__slider{
+  .sertificats__slider {
     position: relative;
-    .slick-slide{
+    .slick-slide {
     }
-    &-img{
+    &-img {
       max-width: 560px;
       width: 100%;
       height: 90vh;
       margin-right: 10px;
       margin-left: 10px;
-      img{
+      img {
         object-fit: contain;
         width: 100%;
         height: 100%;
         object-position: center center;
       }
     }
-    .sertificat-arrow{
+    .sertificat-arrow {
       position: absolute;
       width: 100px;
       height: 10%;
       z-index: 999;
       text-align: center;
       cursor: pointer;
-      opacity: .6;
-      transition: .3s;
-      &:hover{
+      opacity: 0.6;
+      transition: 0.3s;
+      &:hover {
         opacity: 1;
       }
-      &-prew{
+      &-prew {
         left: -80px;
         top: 50%;
         transform: translateY(-50%);
         padding-left: 20px;
       }
-      &-next{
+      &-next {
         right: -80px;
         top: 50%;
         transform: translateY(-50%);
         padding-right: 20px;
-        img{
+        img {
           transform: rotate(180deg);
           height: 100%;
         }
@@ -187,18 +196,18 @@
     }
   }
   .modal__team-close,
-  .modal__sert-close{
+  .modal__sert-close {
     width: 50px;
     height: 50px;
     position: absolute;
     right: 30px;
     top: 30px;
     z-index: 999;
-    opacity: .5;
+    opacity: 0.5;
     cursor: pointer;
     background-image: url(../img/svg/close.svg);
-    transition: .3s;
-    &:hover{
+    transition: 0.3s;
+    &:hover {
       opacity: 1;
     }
   }
@@ -210,37 +219,64 @@
       padding-right: 20px;
     }
   }
-  @media (max-width: 1250px){
-    .modal__team{
+  @media (max-width: 1250px) {
+    .modal__team {
       max-width: 800px;
     }
-    .team__slider-img img{
+    .team__slider-img img {
       width: 800px;
     }
   }
-  @media (max-width: 1050px){
-    .modal__team{
+  @media (max-width: 1080px) {
+    .team__members {
+      gap: 2%;
+      justify-content: space-between;
+    }
+    .team__member {
+      gap: 15px;
+      max-width: 49%;
+      margin-bottom: 14px;
+      padding: 15px;
+    }
+    .team__member-name {
+      flex-wrap: wrap;
+      font-size: 20px;
+      line-height: 25px;
+      gap: 10px;
+    }
+  }
+  @media (max-width: 1050px) {
+    .modal__team {
       max-width: 600px;
     }
-    .team__slider-img img{
+    .team__slider-img img {
       width: 600px;
     }
   }
-  @media (max-width: 810px){
-    .modal__team{
+  @media (max-width: 810px) {
+    .modal__team {
       max-width: 500px;
     }
-    .team__slider-img img{
+    .team__slider-img img {
       width: 500px;
     }
-    .modal__team-close{
+    .modal__team-close {
       right: 20px;
     }
-    .sertificats__slider{
+    .sertificats__slider {
       max-width: 500px;
     }
-    .sertificats__slider-img{
+    .sertificats__slider-img {
       max-width: 500px;
+    }
+  }
+  @media (max-width: 824px){
+    .team__member{
+      flex-direction: column;
+      align-items: center;
+    }
+    .team__member-sertificats{
+      position: static;
     }
   }
   @media (max-width: 768px) {
@@ -250,75 +286,75 @@
       line-height: 42px;
     }
   }
-  @media (max-width: 720px){
-    .modal__team{
+  @media (max-width: 720px) {
+    .modal__team {
       max-width: 450px;
     }
-    .team__slider-img img{
+    .team__slider-img img {
       width: 450px;
     }
-    .team-arrow{
-      &-prew{
+    .team-arrow {
+      &-prew {
         left: -70px;
       }
-      &-next{
+      &-next {
         right: -70px;
       }
     }
-    .modal__team-close{
+    .modal__team-close {
       right: 10px;
     }
-    .sertificats__slider-img{
+    .sertificats__slider-img {
       max-width: 600px;
     }
   }
-  @media (max-width: 680px){
-    .modal__sert-close{
+  @media (max-width: 680px) {
+    .modal__sert-close {
       right: 20px;
     }
   }
-  @media (max-width: 650px){
-    .modal__sert-close{
+  @media (max-width: 650px) {
+    .modal__sert-close {
       right: 10px;
     }
-    .sertificat-arrow{
-      &-prew{
+    .sertificat-arrow {
+      &-prew {
         left: -60px;
       }
-      &-next{
+      &-next {
         right: -60px;
       }
     }
-    .modal__sert-close{
+    .modal__sert-close {
       border-radius: 100%;
       top: 10px;
     }
-    .sertificats__slider-img{
+    .sertificats__slider-img {
       height: 80vh;
     }
   }
-  @media (max-width: 600px){
-    .sertificat-arrow{
-      display: none!important;
+  @media (max-width: 600px) {
+    .sertificat-arrow {
+      display: none !important;
     }
   }
-  @media (max-width: 586px){
-    .modal__team{
+  @media (max-width: 586px) {
+    .modal__team {
       position: relative;
     }
-    .modal__team-close{
+    .modal__team-close {
       border-radius: 100%;
       top: 10px;
       opacity: 0.8;
     }
-    .team-arrow{
-      display: none!important;
+    .team-arrow {
+      display: none !important;
     }
-    .team__slider-img{
+    .team__slider-img {
       max-width: 560px;
       width: 100%;
     }
-    .team__slider-img img{
+    .team__slider-img img {
       max-width: 100%;
       width: 100%;
     }
@@ -329,11 +365,21 @@
       line-height: 150%;
       margin-bottom: 50px;
     }
+    .team__members {
+      flex-direction: row;
+      gap: 2%;
+      margin-bottom: 60px;
+    }
     .team__member {
       flex-direction: column;
       gap: 15px;
+      max-width: 49%;
+      margin-bottom: 14px;
+      padding: 15px;
+      align-items: flex-start;
       &-img {
-        width: 180px;
+        max-width: 180px;
+        width: 100%;
         height: 180px;
         flex-shrink: 0;
       }
@@ -341,89 +387,112 @@
         position: static;
       }
       &-name {
-        flex-direction: row;
+        // flex-direction: row;
         flex-wrap: wrap;
         font-size: 20px;
         line-height: 25px;
         gap: 10px;
       }
     }
-    .slick-list.draggable{
-      max-width:450px;
-      width: 100%;
-    }
-    .sertificats__slider-img{
-      max-width:450px;
-      width: 100%;
-    }
-    .sertificats__slider-img img{
-      max-width:450px;
-      width: 100%;
-    }
-  }
-  @media (max-width: 450px){
-    .modal__team{
-      position: static;
-    }
-    .modal__team-close{
-      top: 20px;
-    }
-    .team__slider-img{
+    .slick-list.draggable {
       max-width: 450px;
       width: 100%;
     }
-    .slick-list.draggable{
-      max-width:400px;
+    .sertificats__slider-img {
+      max-width: 450px;
       width: 100%;
     }
-    .sertificats__slider-img{
-      max-width:400px;
-      width: 100%;
-    }
-    .sertificats__slider-img img{
-      max-width:400px;
+    .sertificats__slider-img img {
+      max-width: 450px;
       width: 100%;
     }
   }
-  @media (max-width: 450px){
-    .slick-list.draggable{
-      max-width:375px;
+  @media (max-width: 480px) {
+    .team__member {
+      gap: 10px;
+    }
+    .team__member-name {
+      font-size: 14px;
+      line-height: 20px;
+      gap: 0;
+    }
+    .team__member-position {
+      font-size: 12px;
+    }
+    .team__member-sertificats {
+      overflow: hidden;
+    }
+  }
+  @media (max-width: 450px) {
+    .modal__team {
+      position: static;
+    }
+    .modal__team-close {
+      top: 20px;
+    }
+    .team__slider-img {
+      max-width: 450px;
       width: 100%;
     }
-    .sertificats__slider-img{
-      max-width:375px;
+    .slick-list.draggable {
+      max-width: 400px;
       width: 100%;
     }
-    .sertificats__slider-img img{
-      max-width:375px;
+    .sertificats__slider-img {
+      max-width: 400px;
+      width: 100%;
+    }
+    .sertificats__slider-img img {
+      max-width: 400px;
       width: 100%;
     }
   }
-  @media (max-width: 375px){
-    .slick-list.draggable{
-      max-width:350px;
+  @media (max-width: 450px) {
+    .slick-list.draggable {
+      max-width: 375px;
       width: 100%;
     }
-    .sertificats__slider-img{
-      max-width:350px;
+    .sertificats__slider-img {
+      max-width: 375px;
       width: 100%;
     }
-    .sertificats__slider-img img{
-      max-width:350px;
+    .sertificats__slider-img img {
+      max-width: 375px;
       width: 100%;
     }
   }
-  @media (max-width: 350px){
-    .slick-list.draggable{
-      max-width:320px;
+  @media (max-width: 375px) {
+    .team__slider-img {
+      max-width: 375px;
+      width: 100%;
+      img {
+        max-width: 375px;
+      }
+    }
+    .slick-list.draggable {
+      max-width: 350px;
       width: 100%;
     }
-    .sertificats__slider-img{
-      max-width:320px;
+    .sertificats__slider-img {
+      max-width: 350px;
       width: 100%;
     }
-    .sertificats__slider-img img{
-      max-width:320px;
+    .sertificats__slider-img img {
+      max-width: 350px;
+      width: 100%;
+    }
+  }
+  @media (max-width: 350px) {
+    .slick-list.draggable {
+      max-width: 320px;
+      width: 100%;
+    }
+    .sertificats__slider-img {
+      max-width: 320px;
+      width: 100%;
+    }
+    .sertificats__slider-img img {
+      max-width: 320px;
       width: 100%;
     }
   }
