@@ -13,7 +13,7 @@
     margin-bottom: 40px;
   }
   &__link {
-    color: var(--color--contrast-low);
+    color: #d6d6d6;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
@@ -42,7 +42,7 @@
     border-radius: 24px;
     padding-left: 32px;
     padding-right: 32px;
-    background: var(--form-color);
+    background: #1b1b1b;
     &-wrapper {
       display: flex;
       flex-direction: column;
@@ -148,7 +148,7 @@
       font-size: 18px;
       line-height: 22px;
       a {
-        color: var(--color--contrast-low);
+        color: #d6d6d6;
       }
     }
   }

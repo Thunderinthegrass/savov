@@ -81,6 +81,7 @@
       position: absolute;
       left: 125px;
       top: 37px;
+      color: #ffffff;
     }
     &-info {
       // height: 77px;
@@ -258,7 +259,6 @@
     }
     .portfolio__inner {
       gap: 26px;
-      padding-top: 58px;
     }
     .portfolio__filters-row {
       display: none;
@@ -271,7 +271,6 @@
     .portfolio__inner {
       flex-direction: column;
       align-items: center;
-      padding-top: 41px;
     }
     .portfolio__item {
       height: 300px;

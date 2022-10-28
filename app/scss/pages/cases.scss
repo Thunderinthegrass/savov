@@ -1,6 +1,5 @@
 .cases {
-  color: var(--color--contrast-low);
-  background-color: var(--bg);
+  // color: var(--color--contrast-low);
   .container{
     padding-left: 0;
     padding-right: 0;
@@ -26,6 +25,7 @@
   }
   &__tab-filters {
     margin-top: 36px;
+    margin-bottom: 41px;
     display: flex;
   }
   .tab-filter {
@@ -51,7 +51,6 @@
     }
   }
   .tab-body {
-    padding-top: 36px;
     display: none;
     &__names {
       display: flex;
@@ -143,7 +142,7 @@
           span {
             display: inline-block;
             &:first-child{
-              color: var(--list2);
+              color: #818181;
             }
           }
         }
@@ -369,7 +368,7 @@
       line-height: 22px;
       width: 275px;
       margin-bottom: 38px;
-      color: var(--filter-active);
+      color: #c2c6cb;
     }
     .body-info__left .indicator-name {
       margin-bottom: 7px;

@@ -27,8 +27,8 @@
 .modal__sertificat {
 	width: 560px;
 	height: auto;
-  margin-top: 450px;
-  margin-bottom: 30px;
+  // margin-top: 450px;
+  // margin-bottom: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -37,6 +37,7 @@
     text-align: center;
     background: #fff;
     padding: 40px;
+    display: none;
   }
   &-title{
     font-size: 32px;
