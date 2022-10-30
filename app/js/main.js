@@ -440,7 +440,7 @@ function moreReviews() {
     revievs.classList.toggle("hide");
 
     if (revievs.classList.contains("hide")) {
-      btn.innerHTML = "Показать ещё";
+      btn.innerHTML = "Больше отзывов";
     } else {
       btn.innerHTML = "Скрыть";
     }
@@ -777,6 +777,7 @@ function mailFixed() {
   let mail = document.querySelector(".footer__link_mail");
   let whatsapp = document.querySelector(".footer__link_whatsapp");
   let tg = document.querySelector(".footer__link_telegram");
+  let headerLinks = document.querySelector(".header__links");
   let container = document.querySelector(".container");
   let containerWidth = container.offsetWidth;
   let docWidth = document.documentElement.clientWidth;
@@ -787,6 +788,7 @@ function mailFixed() {
     mail.style.left = `${left}px`;
     whatsapp.style.right = `${left}px`;
     tg.style.right = `${right}px`;
+    headerLinks.style.right = `${left}px`;
   }
 }
 mailFixed();

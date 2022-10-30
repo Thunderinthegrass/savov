@@ -188,4 +188,24 @@
       display: block;
     }
   }
+  .reviews_hide{
+    gap: 30px;
+    @media(max-width:1024px){
+      gap: 50px;
+      // flex-wrap: wrap;
+      // justify-content: start;
+    }
+    .reviews__item{
+      max-width: 530px;
+      width: 100%;
+      @media(max-width:1024px){
+        max-width: calc(50% - 25px);
+        width: 100%;
+        flex: auto;
+      }
+      @media(max-width:768px){
+        max-width: 530px;
+      }
+    }
+  }
 }
