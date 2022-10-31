@@ -19,7 +19,6 @@
 	transition: all 0.3s ease-in-out;
   z-index: 990;
   overflow-y: auto;
-  // overflow-x: hidden;
 }
 .modals{
   z-index: 2;
@@ -27,8 +26,6 @@
 .modal__sertificat {
 	width: 560px;
 	height: auto;
-  // margin-top: 450px;
-  // margin-bottom: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;

@@ -22,10 +22,6 @@
     color: #D6D6D6;
     margin-bottom: 36px;
     transition: .3s;
-    &.portfolio__nav--active {
-      // color: var(--filter-active) !important;
-      // border-color: var(--filter-active) !important;
-    }
   }
   &__filters-row {
     padding-bottom: 78px;
@@ -42,10 +38,6 @@
     border-radius: 123px;
     cursor: pointer;
     transition: 0.3s;
-    &.portfolio__nav--active {
-      // color: var(--filter-active) !important;
-      // border-color: var(--filter-active) !important;
-    }
   }
   &__inner {
     display: none;

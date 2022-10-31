@@ -1,35 +1,3 @@
-// function heightColumn() {
-//   let colName = document.querySelectorAll('.entry-name');
-//   let colLite = document.querySelectorAll('.entry-lite');
-//   let colStandart = document.querySelectorAll('.entry-standart');
-//   let colPremium = document.querySelectorAll('.entry-premium');
-//   let colExpress = document.querySelectorAll('.entry-express');
-//   console.log(colName.length)
-//   console.log(colLite.length)
-//   console.log(colStandart.length)
-//   console.log(colPremium.length)
-//   console.log(colExpress.length)
-
-//   colName.forEach((item, id) => {
-//     let h = item.offsetHeight;
-//     console.log(h);
-//     colLite[id].style.height = `${h}px`;
-//     console.log(colLite[id].offsetHeight)
-//     colStandart[id].style.height = `${h}px`;
-//     console.log(colStandart[id].offsetHeight)
-//     colPremium[id].style.height = `${h}px`;
-//     console.log(colPremium[id].offsetHeight)
-//     colExpress[id].style.height = `${h}px`;
-//     console.log(colExpress[id].offsetHeight)
-//   })
-
-//   // for (let i = 0; i < colName.length; i++) {
-//   //   // let h = colName[1].offsetHeight;
-//   //   console.log(colName.length)
-//   // }
-// }
-// heightColumn();
-
 (function () {
   function detectColorScheme() {
     var theme = "light";
@@ -80,23 +48,13 @@ setTimeout(() => {
   let colStandart = document.querySelectorAll(".entry-standart");
   let colPremium = document.querySelectorAll(".entry-premium");
   let colExpress = document.querySelectorAll(".entry-express");
-  console.log(colName.length);
-  console.log(colLite.length);
-  console.log(colStandart.length);
-  console.log(colPremium.length);
-  console.log(colExpress.length);
 
   colName.forEach((item, id) => {
     let h = item.offsetHeight;
-    console.log(h);
     colLite[id].style.height = `${h}px`;
-    console.log(colLite[id].offsetHeight);
     colStandart[id].style.height = `${h}px`;
-    console.log(colStandart[id].offsetHeight);
     colPremium[id].style.height = `${h}px`;
-    console.log(colPremium[id].offsetHeight);
     colExpress[id].style.height = `${h}px`;
-    console.log(colExpress[id].offsetHeight);
   });
 }, 2000);
 
@@ -106,11 +64,13 @@ function mobileMenu() {
   let navLists = document.querySelector(".nav__lists");
   let link = document.querySelectorAll(".nav__link");
   let contact = document.querySelectorAll(".nav__contact");
+  let body = document.body;
 
   btn.addEventListener("click", () => {
     btn.classList.toggle("active");
     nav.classList.toggle("active");
     navLists.classList.toggle("active");
+    body.classList.toggle('ov-hidden');
   });
 
   link.forEach((elem) => {
@@ -118,6 +78,7 @@ function mobileMenu() {
       btn.classList.toggle("active");
       nav.classList.toggle("active");
       navLists.classList.toggle("active");
+      body.classList.remove('ov-hidden');
     });
   });
 
@@ -126,6 +87,7 @@ function mobileMenu() {
       btn.classList.toggle("active");
       nav.classList.toggle("active");
       navLists.classList.toggle("active");
+      body.classList.remove('ov-hidden');
     });
   });
 }
@@ -151,27 +113,6 @@ function portfolioTab() {
   tabs(servicesItem, tabNav);
 }
 portfolioTab();
-
-// function portfolioTabs() {
-//   let tabNav = document.querySelectorAll(".portfolio__filters-btn");
-//   let servicesItem = document.querySelectorAll(".portfolio__inner");
-
-//   function tabs(Tab, Button) {
-//     Button.forEach((elem, index) => {
-//       elem.addEventListener("click", (e) => {
-//         for (let i = 0; i < Button.length; i++) {
-//           Button[i].classList.remove("portfolio__nav--active");
-//           e.target.classList.add("portfolio__nav--active");
-//           Tab[i].classList.remove("portfolio--active");
-//         }
-//         Tab[index].classList.add("portfolio--active");
-//       });
-//     });
-//   }
-
-//   tabs(servicesItem, tabNav);
-// }
-// portfolioTabs();
 
 function casesTab() {
   const casesButton = document.querySelectorAll(".cases-button");
@@ -223,16 +164,13 @@ function tabBodyInfo() {
   const casesTabBody = document.querySelectorAll(".cases__tab-body");
 
   for (let i = 0; i < casesTabBody.length; i++) {
-    //обертка кнопок фильтров
     let nameTab = casesTabBody[i].querySelectorAll(".name-tab");
     let bodyInfo = casesTabBody[i].querySelectorAll(".body-info");
 
     for (let k = 0; k < nameTab.length; k++) {
-      //кнопки фильтров
 
       nameTab[k].addEventListener("click", () => {
         for (let b = 0; b < bodyInfo.length; b++) {
-          //добавление всем d-none
           bodyInfo[b].classList.remove("d-flex");
           nameTab[b].classList.remove("tab--active");
         }
@@ -264,6 +202,7 @@ function modal() {
   const btns = document.querySelectorAll(".btn");
   const modalOverlay = document.querySelector(".modal-overlay-sertificat");
   const modals = document.querySelectorAll(".modal");
+  let body = document.body;
 
   btns.forEach((el) => {
     el.addEventListener("click", (e) => {
@@ -273,16 +212,14 @@ function modal() {
         el.classList.remove("modal--visible");
       });
 
-      document
-        .querySelector(`[data-target="${path}"]`)
-        .classList.add("modal--visible");
+      document.querySelector(`[data-target="${path}"]`).classList.add("modal--visible");
       modalOverlay.classList.add("modal-overlay--visible");
+      body.classList.add('ov-hidden');
     });
   });
 
   modalOverlay.addEventListener("click", (e) => {
-    console.log(e.target);
-
+    body.classList.remove('ov-hidden');
     if (e.target == modalOverlay) {
       modalOverlay.classList.remove("modal-overlay--visible");
       modals.forEach((el) => {
@@ -315,7 +252,6 @@ function modalVideo() {
     });
 
     modalOverlay[id].addEventListener("click", (e) => {
-      console.log(e.target);
 
       if (e.target == modalOverlay[id]) {
         modalOverlay[id].classList.remove("modal-overlay--visible");
@@ -329,69 +265,13 @@ function modalVideo() {
 
 modalVideo();
 
-function modalTeam() {
-  const btns = document.querySelectorAll(".btn-team");
-  const modalOverlay = document.querySelectorAll(".modal-overlay-team");
-  const modals = document.querySelectorAll(".modal__team");
-  let teamModal = document.querySelector(".team-modal");
-  let closeBtn = document.querySelectorAll(".modal__team-close");
-
-  btns.forEach((el, id) => {
-    el.addEventListener("click", (e) => {
-      let path = e.currentTarget.getAttribute("data-path");
-
-      modals.forEach((el) => {
-        el.classList.remove("modal--visible");
-      });
-
-      document
-        .querySelector(`[data-target="${path}"]`)
-        .classList.add("modal--visible");
-      modalOverlay[id].classList.add("modal-overlay--visible");
-    });
-
-    modalOverlay[id].addEventListener("click", (e) => {
-      console.log(e.target);
-
-      if (e.target == modalOverlay[id] || e.target == closeBtn[id]) {
-        modalOverlay[id].classList.remove("modal-overlay--visible");
-        modals.forEach((el) => {
-          el.classList.remove("modal--visible");
-        });
-      }
-    });
-  });
-}
-
-modalTeam();
-
-// const modalOverlay = document.querySelectorAll(".modal-overlay-team");
-// let closeBtn = document.querySelectorAll('.modal__team-close');
-
-// closeBtn.forEach((elem) => {
-//   elem.addEventListener('click', () => {
-//     modalOverlay.forEach((el) => {
-//       el.classList.remove("modal--visible");
-//     })
-//   })
-// })
-
-$(document).ready(function () {
-  $(".team__slider").slick({
-    variableWidth: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: `<button type="button" class="team-arrow team-arrow-prew"><img src="img/team/arrow.svg" alt=""></button>`,
-    nextArrow: `<button type="button" class="team-arrow team-arrow-next"><img src="img/team/arrow.svg" alt=""></button>`,
-  });
-});
-
 function modalTeamSertificats() {
   const btns = document.querySelectorAll(".btn-sertificat");
   const modalOverlay = document.querySelectorAll(".modal-overlay-sertificats");
   const modals = document.querySelectorAll(".modal__sertificats");
   let teamModal = document.querySelector(".sertificats-modal");
   let closeBtn = document.querySelectorAll(".modal__sert-close");
+  let body = document.body;
 
   btns.forEach((el, id) => {
     el.addEventListener("click", (e) => {
@@ -405,10 +285,10 @@ function modalTeamSertificats() {
         .querySelector(`[data-target="${path}"]`)
         .classList.add("modal--visible");
       modalOverlay[id].classList.add("modal-overlay--visible");
+      body.classList.add('ov-hidden');
     });
 
     modalOverlay[id].addEventListener("click", (e) => {
-      console.log(e.target);
 
       if (e.target == modalOverlay[id] || e.target == closeBtn[id]) {
         modalOverlay[id].classList.remove("modal-overlay--visible");
@@ -416,6 +296,7 @@ function modalTeamSertificats() {
           el.classList.remove("modal--visible");
         });
       }
+      body.classList.remove('ov-hidden');
     });
   });
 }
@@ -478,7 +359,6 @@ $(document).ready(function () {
   $(".prices-mobile__slider-top").slick({
     arrows: false,
     variableWidth: true,
-    // slidesToScroll: 1,
     focusOnSelect: true,
     infinite: false,
     asNavFor: ".prices-mobile__slider-bottom",
@@ -514,7 +394,6 @@ function modalOrder() {
   });
 
   modalOverlay.addEventListener("click", (e) => {
-    console.log(e.target);
 
     if (e.target == modalOverlay) {
       modalOverlay.classList.remove("modal-overlay--visible");
@@ -543,8 +422,6 @@ function slider() {
       count = 0;
     }
     for (let k = 0; k < nameTab.length; k++) {
-      // nameTab[k].classList.add('off');
-      // nameTab[count].classList.remove('off');
       nameTab[k].classList.remove("tab--active");
       nameTab[count].classList.add("tab--active");
       bodyInfo[k].classList.remove("d-flex");
@@ -588,8 +465,6 @@ function sliderMobile() {
         count = 0;
       }
       for (let k = 0; k < nameTab.length; k++) {
-        // nameTab[k].classList.add('off');
-        // nameTab[count].classList.remove('off');
         nameTab[k].classList.remove("tab--active");
         nameTab[count].classList.add("tab--active");
         bodyInfo[k].classList.remove("d-flex");

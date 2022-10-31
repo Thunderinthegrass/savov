@@ -19,17 +19,17 @@
     line-height: 22px;
     &_whatsapp {
       position: fixed;
-      bottom: 170px;
+      bottom: 25px;
       right: 80px;
     }
     &_mail {
       position: fixed;
-      bottom: 170px;
+      bottom: 25px;
       left: 80px;
     }
     &_telegram {
       position: fixed;
-      bottom: 170px;
+      bottom: 25px;
       right: 234px;
     }
     &_phone {
@@ -170,7 +170,7 @@
     line-height: 141%;
     color: #a4a6a9;
     opacity: 0.8;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     max-width: 771px;
     width: 100%;
     @media (max-width: 550px) {
@@ -287,10 +287,6 @@
       &-item {
         margin-bottom: 7px;
       }
-    }
-    .footer__form {
-      // max-width: 600px;
-      // width: 100%;
     }
   }
   @media (max-width: 768px) {

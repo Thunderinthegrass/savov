@@ -3,7 +3,6 @@
 }
 html,
 body {
-  // font-family: 'RF Dewi Expanded', Arial, sans-serif;
   font-family: RFDewi, Arial, sans-serif;
   font-weight: bold;
   background-color: #131313;
@@ -21,8 +20,6 @@ body {
   display: block;
 }
 .tab-filter.tab--active{
-  // color: var(--filter-active)!important;
-  // border-color: var(--filter-active)!important;
   color: #c2c6cb!important;
   border-color: #c2c6cb!important;
 }
@@ -50,4 +47,7 @@ body {
 }
 .m-none{
   margin: 0!important;
+}
+.ov-hidden{
+  overflow: hidden;
 }
