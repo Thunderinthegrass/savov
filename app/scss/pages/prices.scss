@@ -152,6 +152,22 @@
           padding-right: 10px;
         }
       }
+      &.top{
+        .rate{
+          padding-top: 15px;
+          padding-bottom: 15px;
+          height: auto;
+        }
+        .rate__price{
+          margin-bottom: 0;
+        }
+        .rate__info{
+          display: none;
+        }
+        .rate__info-link{
+          display: none;
+        }
+      }
     }
   }
   &__buttons {
@@ -556,6 +572,21 @@
   display: flex;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
+  &.top{
+    .title-track{
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .rate__price{
+      margin-bottom: 0;
+    }
+    .rate__info{
+      display: none;
+    }
+    .rate__info-link{
+      display: none;
+    }
+  }
 }
 
 .scroller {

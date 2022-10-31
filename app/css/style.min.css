@@ -2106,6 +2106,20 @@ body {
   height: 190px;
   padding-right: 10px;
 }
+.prices__item.prices__item_first.top .rate {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
+}
+.prices__item.prices__item_first.top .rate__price {
+  margin-bottom: 0;
+}
+.prices__item.prices__item_first.top .rate__info {
+  display: none;
+}
+.prices__item.prices__item_first.top .rate__info-link {
+  display: none;
+}
 .prices__buttons {
   position: relative;
 }
@@ -2549,6 +2563,23 @@ body {
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
+.tracks.top .title-track,
+.scroller.top .title-track {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.tracks.top .rate__price,
+.scroller.top .rate__price {
+  margin-bottom: 0;
+}
+.tracks.top .rate__info,
+.scroller.top .rate__info {
+  display: none;
+}
+.tracks.top .rate__info-link,
+.scroller.top .rate__info-link {
+  display: none;
+}
 
 .scroller {
   overflow-x: hidden;
@@ -2634,7 +2665,6 @@ body {
   -o-transition: 0.3s;
   transition: 0.3s;
   border-radius: 4px;
-  cursor: pointer;
 }
 .clients__item:hover {
   background: #f9f9f9;
