@@ -39,6 +39,24 @@ body {
 .body-info.d-flex{
   display: flex!important;
 }
+.body-info.anim{
+  opacity: 0;
+  animation: info 3s linear;
+}
+@keyframes info{
+  from{
+    opacity: 0;
+  }
+  3%{
+    opacity: 1;
+  }
+  95%{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
 .h-none{
   height: 0!important;
 }
