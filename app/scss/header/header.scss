@@ -223,9 +223,6 @@
   }
   .to-bottom {
     &_left {
-      // position: absolute;
-      // left: 80px;
-      // top: 45px;
       display: inline-block;
       position: relative;
       width: 136px;
@@ -299,17 +296,21 @@
     gap: 20px;
     &-row{
       display: flex;
+      .row__inner{
+        display: flex;
+      }
     }
   }
   &__service {
     padding: 14px 46px;
     border: 1px solid #4d4e4f;
-    color: #4d4e4f;
+    color: #a4a6a9;
     border-radius: 123px;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     margin-right: 17px;
+    cursor: pointer;
     &:last-child {
       margin-right: 0;
     }
@@ -386,13 +387,18 @@
       align-items: center;
       &-row{
         flex-direction: column;
-        width: 100%;
         align-items: center;
         &:nth-child(2){
-          .header__service:first-child{
-            max-width: 133px;
-            width: 100%;
+          .header__service{
+            width: auto;
           }
+        }
+      }
+      .row__inner{
+        gap: 17px;
+        .header__service{
+          margin-bottom: 0;
+          margin-right: 0;
         }
       }
     }
@@ -403,14 +409,7 @@
         margin-bottom: 17px;
       }
       &:nth-child(2) {
-        // max-width: 250px;
-        // width: 100%;
         margin-bottom: 17px;
-      }
-      &:last-child {
-        // margin-right: 0;
-        // max-width: 106px;
-        // width: 100%;
       }
     }
   }
@@ -420,10 +419,10 @@
       height: 19px;
     }
     .header__top {
-      margin-bottom: 20%;
+      margin-bottom: 67px;
     }
     .header__title {
-      margin-bottom: 20%;
+      margin-bottom: 67px;
     }
     .header__services {
       position: static;
@@ -448,79 +447,85 @@
         margin-bottom: 11px;
       }
     }
+  }
+  @media (max-width: 500px){
     .header__services-row{
-      align-items: flex-start;
+      align-items: start;
+      // justify-content: start;
+      &:nth-child(2){
+        width: 100%;
+      }
     }
   }
-  @media (max-height: 794px){
-    .header__top {
-      margin-bottom: 17%;
-    }
-    .header__title {
-      margin-bottom: 17%;
-    }
-  }
-  @media (max-height: 767px){
-    .header__top {
-      margin-bottom: 14%;
-    }
-    .header__title {
-      margin-bottom: 14%;
-    }
-  }
-  @media (max-height: 745px){
-    .header__top {
-      margin-bottom: 11%;
-    }
-    .header__title {
-      margin-bottom: 11%;
-    }
-  }
-  @media (max-height: 724px){
-    .header__top {
-      margin-bottom: 10%;
-    }
-    .header__title {
-      margin-bottom: 10%;
-    }
-    .header__service{
-      margin-bottom: 0!important;
-    }
-    .header__services-row{
-      gap: 14px;
-    }
-    .header__services{
-      gap: 14px;
-    }
-  }
-  @media (max-height: 710px){
-    .header__top {
-      margin-bottom: 8%;
-    }
-    .header__title {
-      margin-bottom: 8%;
-    }
-    .header__services-row{
-      gap: 12px;
-    }
-    .header__services{
-      gap: 12px;
-    }
-  }
-  @media (max-height: 685px){
-    .header__top {
-      margin-bottom: 6%;
-    }
-    .header__title {
-      margin-bottom: 6%;
-    }
-    .header__services-row{
-      gap: 10px;
-    }
-    .header__services{
-      gap: 10px;
-    }
-  }
+  // @media (max-height: 794px){
+  //   .header__top {
+  //     margin-bottom: 17%;
+  //   }
+  //   .header__title {
+  //     margin-bottom: 17%;
+  //   }
+  // }
+  // @media (max-height: 767px){
+  //   .header__top {
+  //     margin-bottom: 14%;
+  //   }
+  //   .header__title {
+  //     margin-bottom: 14%;
+  //   }
+  // }
+  // @media (max-height: 745px){
+  //   .header__top {
+  //     margin-bottom: 11%;
+  //   }
+  //   .header__title {
+  //     margin-bottom: 11%;
+  //   }
+  // }
+  // @media (max-height: 724px){
+  //   .header__top {
+  //     margin-bottom: 10%;
+  //   }
+  //   .header__title {
+  //     margin-bottom: 10%;
+  //   }
+  //   .header__service{
+  //     margin-bottom: 0!important;
+  //   }
+  //   .header__services-row{
+  //     gap: 14px;
+  //   }
+  //   .header__services{
+  //     gap: 14px;
+  //   }
+  // }
+  // @media (max-height: 710px){
+  //   .header__top {
+  //     margin-bottom: 8%;
+  //   }
+  //   .header__title {
+  //     margin-bottom: 8%;
+  //   }
+  //   .header__services-row{
+  //     gap: 12px;
+  //   }
+  //   .header__services{
+  //     gap: 12px;
+  //   }
+  // }
+  // @media (max-height: 685px){
+  //   .header__top {
+  //     margin-bottom: 6%;
+  //   }
+  //   .header__title {
+  //     margin-bottom: 6%;
+  //   }
+  //   .header__services-row{
+  //     gap: 10px;
+  //   }
+  //   .header__services{
+  //     gap: 10px;
+  //   }
+  // }
   @media (max-width: 630px) {
     .container {
       padding-left: 20px;
