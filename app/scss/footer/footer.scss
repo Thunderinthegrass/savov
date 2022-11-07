@@ -1,4 +1,5 @@
 .footer {
+  padding-top: 200px;
   .container {
     padding-left: 80px;
     padding-right: 80px;
@@ -290,15 +291,13 @@
     }
   }
   @media (max-width: 768px) {
+    padding-top: 0;
     .container {
       padding-left: 20px;
       padding-right: 20px;
     }
   }
   @media (max-width: 750px) {
-    .footer__title {
-      display: none;
-    }
     .footer__links {
       padding-top: 15px;
       align-items: start;
@@ -307,7 +306,7 @@
       margin-right: 24px;
     }
     .footer__form-wrapper {
-      padding-top: 50px;
+      padding-top: 70px;
       margin-bottom: 90px;
     }
     .footer__bottom {
@@ -318,6 +317,10 @@
     .container {
       padding-left: 0;
       padding-right: 0;
+    }
+    .footer__title{
+      padding-left: 20px;
+      padding-right: 20px;
     }
     .footer__inner {
       padding-left: 20px;

@@ -1,6 +1,6 @@
 .industry {
   padding-top: 250px;
-  padding-bottom: 240px;
+  padding-bottom: 180px;
   .container {
     padding-left: 80px;
     padding-right: 80px;
@@ -147,7 +147,7 @@
   }
   @media (max-width: 930px) {
     padding-top: 108px;
-    padding-bottom: 110px;
+    padding-bottom: 50px;
     .industry__inner{
       display: flex;
       justify-content: space-between;
@@ -203,7 +203,7 @@
   }
   @media (max-width: 550px){
     padding-top: 90px;
-    padding-bottom: 98px;
+    padding-bottom: 38px;
     .industry__title {
       font-size: 14px;
       line-height: 21px;

@@ -134,6 +134,9 @@
   }
   @media (max-width: 768px) {
     margin-bottom: 120px;
+    .clients__inner{
+      justify-content: start;
+    }
     .clients__item {
       max-width: 50%;
       width: 100%;
@@ -174,17 +177,11 @@
   .slick-slide{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: center;
     // width: 520px;
-    .clients__item{
-      // width: 260px;
-      // height: 260px;
-    }
   }
   @media (max-width: 360px){
-  // width: 434px;
     .slick-slide{
-      // width: 434px;
       .clients__item{
         img{
           width: 125px;

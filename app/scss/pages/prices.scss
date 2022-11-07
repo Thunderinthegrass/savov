@@ -1,5 +1,5 @@
 .prices {
-  margin-bottom: 300px;
+  margin-bottom: 100px;
   padding-top: 200px;
   .container {
     padding-left: 80px;
@@ -141,7 +141,7 @@
       position: sticky;
       top: 80px;
       background: #131313;
-      z-index: 25;
+      z-index: 12;
       border: 1px solid #4d4e4f;
       .lite,
       .standart,
@@ -385,7 +385,7 @@
     }
   }
   @media (max-width: 768px) {
-    margin-bottom: 150px;
+    margin-bottom: 130px;
     padding-top: 100px;
   }
   @media (max-width: 500px) {

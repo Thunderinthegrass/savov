@@ -439,7 +439,7 @@
       flex-direction: column-reverse;
       align-items: center;
       width: 100%;
-      bottom: 52px;
+      bottom: 85px;
       .link-phone {
         margin-right: 0;
       }
@@ -451,81 +451,19 @@
   @media (max-width: 500px){
     .header__services-row{
       align-items: start;
-      // justify-content: start;
       &:nth-child(2){
         width: 100%;
       }
     }
   }
-  // @media (max-height: 794px){
-  //   .header__top {
-  //     margin-bottom: 17%;
-  //   }
-  //   .header__title {
-  //     margin-bottom: 17%;
-  //   }
-  // }
-  // @media (max-height: 767px){
-  //   .header__top {
-  //     margin-bottom: 14%;
-  //   }
-  //   .header__title {
-  //     margin-bottom: 14%;
-  //   }
-  // }
-  // @media (max-height: 745px){
-  //   .header__top {
-  //     margin-bottom: 11%;
-  //   }
-  //   .header__title {
-  //     margin-bottom: 11%;
-  //   }
-  // }
-  // @media (max-height: 724px){
-  //   .header__top {
-  //     margin-bottom: 10%;
-  //   }
-  //   .header__title {
-  //     margin-bottom: 10%;
-  //   }
-  //   .header__service{
-  //     margin-bottom: 0!important;
-  //   }
-  //   .header__services-row{
-  //     gap: 14px;
-  //   }
-  //   .header__services{
-  //     gap: 14px;
-  //   }
-  // }
-  // @media (max-height: 710px){
-  //   .header__top {
-  //     margin-bottom: 8%;
-  //   }
-  //   .header__title {
-  //     margin-bottom: 8%;
-  //   }
-  //   .header__services-row{
-  //     gap: 12px;
-  //   }
-  //   .header__services{
-  //     gap: 12px;
-  //   }
-  // }
-  // @media (max-height: 685px){
-  //   .header__top {
-  //     margin-bottom: 6%;
-  //   }
-  //   .header__title {
-  //     margin-bottom: 6%;
-  //   }
-  //   .header__services-row{
-  //     gap: 10px;
-  //   }
-  //   .header__services{
-  //     gap: 10px;
-  //   }
-  // }
+  @media (max-height: 702px){
+    .header__top {
+      margin-bottom: 58px;
+    }
+    .header__title {
+      margin-bottom: 58px;
+    }
+  }
   @media (max-width: 630px) {
     .container {
       padding-left: 20px;
